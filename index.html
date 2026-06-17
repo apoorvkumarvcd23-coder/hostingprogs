@@ -42,6 +42,15 @@
   .cta:hover{opacity:.92; transform:translateY(-1px);}
   .cta:active{transform:translateY(0);}
   @media(max-width:480px){ .mark span{display:none;} .bar-right{gap:10px;} .cta{padding:7px 12px;} }
+  .partnav{display:flex; gap:18px; font-family:var(--mono); font-size:13px;}
+  .partnav a{color:var(--ink2); text-decoration:none; padding:6px 0;}
+  .partnav a:hover{color:var(--teal);}
+  [id]{scroll-margin-top:72px;}
+  .partdiv{background:var(--card);}
+  .partdiv .lead-h{font-family:var(--serif); font-weight:900; font-size:clamp(30px,5.6vw,52px); line-height:1.04; letter-spacing:-.015em; margin:0 0 20px;}
+  .partdiv .lead-h em{font-style:italic; font-weight:600; color:var(--teal);}
+  .rev1{background:#b6ab8e; width:8%;} .rev2{background:var(--moss); width:37.5%;} .rev3{background:var(--teal); width:100%;}
+  @media(max-width:760px){ .partnav{display:none;} }
 
   /* ---- hero ---- */
   .hero{padding:72px 0 30px;}
@@ -151,6 +160,10 @@
       </svg>
       <span data-k="brand">THE FUEL LAB</span>
     </div>
+    <nav class="partnav">
+      <a href="#chemistry" data-k="nav1">Chemistry</a>
+      <a href="#business" data-k="nav2">Business</a>
+    </nav>
     <div class="bar-right">
       <a class="cta" data-k="cta" href="https://forms.gle/qzTyyiwq8wVg5S1R6" target="_blank" rel="noopener">I’m interested</a>
       <div class="switch" role="group" aria-label="Language">
@@ -162,9 +175,9 @@
   </div>
 </div>
 
-<header class="hero">
+<header id="chemistry" class="hero">
   <div class="wrap">
-    <p class="tagline rv" data-k="tagline">AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY</p>
+    <p class="tagline rv" data-k="tagline">PART ONE · AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY</p>
     <h1 class="rv d1" data-k="hero_h1">Can you turn E20 back into ethanol-free petrol? On the <em>chemistry</em> alone — yes.</h1>
     <p class="lede rv d2" data-k="hero_lede">Set aside cost, scale, hazard and law. Imagine a world where only the molecules matter. The question is simply whether the chemistry cooperates — and it does. Here is exactly what is happening, step by step.</p>
     <div class="pull rv d3">
@@ -273,6 +286,133 @@
   </div>
 </section>
 
+<section id="business" class="partdiv">
+  <div class="wrap">
+    <p class="tagline rv" data-k="b_tag">PART TWO · FROM THE BENCH TO A BUSINESS</p>
+    <h2 class="lead-h rv d1" data-k="b_h1">The chemistry is only half the question. Could you actually <em>sell</em> it?</h2>
+    <p class="lede rv d2" data-k="b_lede">Forget brewing it. Suppose you simply import genuine competition fuel and sell it, legally, through a racetrack you already own. Here is whether that holds up as a business — demand, rules, costs and all.</p>
+    <div class="pull rv d3">
+      <p data-k="b_quote">Sell unleaded competition fuel for track use — the same lane existing race-fuel vendors live in. What a customer does after the gate is their call, not the track’s.</p>
+      <span class="by" data-k="b_who">THE MODEL, STATED HONESTLY</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b1_ch">B1 — THE DEMAND</span>
+    <h2 class="rv" data-k="b1_h">A real pain, looking for a fix</h2>
+    <p class="sub rv" data-k="b1_sub">From April 2026 all Indian petrol is E20 at 95 RON minimum — nationwide, no owner opt-out, and the Supreme Court declined a plea to guarantee ethanol-free supply. Trouble is, plenty of pre-2023 performance bikes were only ever rated for E10.</p>
+    <div class="led rv d1">
+      <div class="lrow"><span class="ix">01</span><div><h4 data-k="b1a_h">Kawasaki Z900 / Z900 RS</h4><p data-k="b1a_p">Rated E10 max, unleaded only — never leaded.</p></div></div>
+      <div class="lrow"><span class="ix">02</span><div><h4 data-k="b1b_h">Kawasaki Ninja 1000 SX (pre-2023)</h4><p data-k="b1b_p">E10 max — the very owner who first raised the alarm.</p></div></div>
+      <div class="lrow"><span class="ix">03</span><div><h4 data-k="b1c_h">KTM supermoto / SMC class</h4><p data-k="b1c_p">Rated E10 from model year 2000 onward.</p></div></div>
+      <div class="lrow"><span class="ix">04</span><div><h4 data-k="b1d_h">Japanese inline-fours, 2007–2022</h4><p data-k="b1d_p">Typical of the segment — all E10-rated.</p></div></div>
+    </div>
+    <p class="pump-note rv d2" data-k="b1_note">The risk isn’t a sudden breakdown — it’s long-term wear to injectors, pumps and seals, a 3–7% mileage drop, and moisture pickup in storage.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b2_ch">B2 — THE MODEL</span>
+    <h2 class="rv" data-k="b2_h">The clean core, and the line you don’t cross</h2>
+    <div class="opts">
+      <div class="opt rv d1">
+        <h3 data-k="b2a_h">The legal core</h3>
+        <p data-k="b2a_p">A PESO-licensed installation stocks unleaded, low/zero-ethanol competition fuel and sells it for track and off-road use. Anchor it with track days and sanctioned events.</p>
+        <div class="form" data-k="b2a_t">LAWFUL · ESTABLISHED LANE</div>
+      </div>
+      <div class="opt rv d2">
+        <h3 data-k="b2b_h">The grey zone</h3>
+        <p data-k="b2b_p">A rider who fills up “for the track” and then heads onto the road is making a personal choice. Keep the fuel unleaded, and never market it as a road-fuel workaround.</p>
+        <div class="form" data-k="b2b_t">CUSTOMER’S CALL · NEVER ADVERTISE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b3_ch">B3 — THE RULE-BOOKS</span>
+    <h2 class="rv" data-k="b3_h">Five regimes you have to satisfy</h2>
+    <div class="led rv d1">
+      <div class="lrow"><span class="ix">01</span><div><h4 data-k="b3a_h">PESO storage &amp; dispensing</h4><p data-k="b3a_p">Past ~30 litres you need a licence, approved tanks, flameproof electricals and fire safety.</p></div></div>
+      <div class="lrow"><span class="ix">02</span><div><h4 data-k="b3b_h">Import permission &amp; customs</h4><p data-k="b3b_p">Imported race fuel needs PESO import permission plus customs clearance — and heavy duty.</p></div></div>
+      <div class="lrow"><span class="ix">03</span><div><h4 data-k="b3c_h">BIS retail spec</h4><p data-k="b3c_p">Race fuel isn’t road-legal spec, so it may only be sold for competition / off-road use.</p></div></div>
+      <div class="lrow"><span class="ix">04</span><div><h4 data-k="b3d_h">Leaded-petrol road ban</h4><p data-k="b3d_p">Stay unleaded and the customer never trips the one clear personal offence.</p></div></div>
+      <div class="lrow"><span class="ix">05</span><div><h4 data-k="b3e_h">Fuel excise</h4><p data-k="b3e_p">India taxes fuel at the gate by product, not by use — so there’s no red-diesel-style trap for petrol.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b4_ch">B4 — THE NUMBERS</span>
+    <h2 class="rv" data-k="b4_h">What it costs, what it fetches</h2>
+    <p class="sub rv" data-k="b4_sub">One-time setup runs roughly ₹22–70 lakh, assuming the track already exists. Per litre, the economics look like this.</p>
+    <div class="pump rv d1">
+      <div class="pump-row">
+        <div class="cell"><div class="rd">₹700–1,200</div><div class="cl" data-k="b4a">LANDED COST / L</div></div>
+        <div class="cell"><div class="rd">₹1,100–1,800</div><div class="cl" data-k="b4b">TRACK RETAIL / L</div></div>
+        <div class="cell"><div class="rd win">40–60%</div><div class="cl" data-k="b4c">GROSS MARGIN</div></div>
+      </div>
+    </div>
+    <p class="pump-note rv d2" data-k="b4_note">Several times the pump price — exactly how niche race fuel is priced the world over.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b5_ch">B5 — THE UPSIDE</span>
+    <h2 class="rv" data-k="b5_h">Three years, three ways it runs</h2>
+    <p class="sub rv" data-k="b5_sub">Gross margin modelled at ₹500 a litre, bolted onto a track you already operate.</p>
+    <div class="bars rv d1">
+      <div class="brow"><div class="top"><span data-k="b5a">Conservative · 4,000 L/yr</span><span class="amt">₹20 lakh</span></div><div class="track"><div class="fill rev1"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="b5b">Moderate · 18,000 L/yr</span><span class="amt">₹90 lakh</span></div><div class="track"><div class="fill rev2"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="b5c">Optimistic · 48,000 L/yr</span><span class="amt">₹2.4 crore</span></div><div class="track"><div class="fill rev3"></div></div></div>
+    </div>
+    <p class="pump-note rv d2" data-k="b5_note">A modest small-business line — and only because the track’s fixed costs are already paid for.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b6_ch">B6 — THE RISKS</span>
+    <h2 class="rv" data-k="b6_h">Where it can go wrong</h2>
+    <div class="led rv d1">
+      <div class="lrow"><span class="ix">01</span><div><h4 data-k="b6a_h">Marketing drift</h4><p data-k="b6a_p">Imply road use and the whole legal core collapses.</p></div></div>
+      <div class="lrow"><span class="ix">02</span><div><h4 data-k="b6b_h">Leaded fuel</h4><p data-k="b6b_p">Stocking it pushes a road offence onto your customers — stay unleaded.</p></div></div>
+      <div class="lrow"><span class="ix">03</span><div><h4 data-k="b6c_h">Customs end-use</h4><p data-k="b6c_p">Sporting-use import concessions can bite if fuel is diverted; price at full duty.</p></div></div>
+      <div class="lrow"><span class="ix">04</span><div><h4 data-k="b6d_h">Safety &amp; liability</h4><p data-k="b6d_p">Class-A petroleum storage is high-hazard, with serious fire and insurance exposure.</p></div></div>
+      <div class="lrow"><span class="ix">05</span><div><h4 data-k="b6e_h">Policy drift</h4><p data-k="b6e_p">E22–E30 and flex-fuel are coming; the anxiety window may narrow over time.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="chno rv" data-k="b7_ch">B7 — THE BIGGER PLAY</span>
+    <h2 class="rv" data-k="b7_h">The cleaner business hiding inside</h2>
+    <p class="sub rv" data-k="b7_sub">Target the anxiety, not the molecule, and the market gets larger while the licensing burden disappears.</p>
+    <div class="led rv d1">
+      <div class="lrow"><span class="ix">01</span><div><h4 data-k="b7a_h">Ethanol-mitigation products</h4><p data-k="b7a_p">Corrosion inhibitors, water-dispersants, ethanol-resistant lines and seals, tank treatments. No PESO, no BIS conflict.</p></div></div>
+      <div class="lrow"><span class="ix">02</span><div><h4 data-k="b7b_h">Premium vehicle care &amp; storage</h4><p data-k="b7b_p">Climate-controlled storage and fuel management for collectible bikes — the owners with both the worry and the budget.</p></div></div>
+      <div class="lrow"><span class="ix">03</span><div><h4 data-k="b7c_h">Licensed track-day supply</h4><p data-k="b7c_p">Partner with circuits and FMSCI events so genuine on-track demand carries the fuel line.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="verdict">
+  <div class="wrap">
+    <span class="chno rv" data-k="bv_eye">THE BOTTOM LINE</span>
+    <h2 class="rv d1" data-k="bv_h">Viable — but only bolted onto a track you already own</h2>
+    <p class="rv d2" data-k="bv_p1">As a small, disciplined add-on, an unleaded competition-fuel line is plausible and legal. As a reason to build a circuit or chase road-fuel demand, it fails: the market is tiny, the safety and compliance load is heavy, and the one big demand pool — road users — is exactly the one you cannot advertise to.</p>
+    <p class="rv d2" data-k="bv_p2">India taxes fuel at the gate, has no red-diesel trap, and doesn’t test fuel roadside — so unleaded competition fuel, your own track, and a customer who simply leaves the gate is about as clean as Indian fuel law allows.</p>
+    <p class="punch rv d3" data-k="bv_punch">The catch was never legal. It’s commercial: <b>the market you can lawfully serve is a sliver of the market that actually wants it.</b></p>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <p data-k="foot_disc">A conceptual science explainer describing why the chemistry works in principle — not a procedure, recipe, or set of operating instructions. The compounds involved are volatile and toxic and the real-world activity carries serious hazards; this page deliberately stays at the level of ideas, not method.</p>
@@ -284,8 +424,9 @@
   const T = {
     en: {
       cta:"I’m interested",
+      nav1:"Chemistry", nav2:"Business",
       brand:"THE FUEL LAB",
-      tagline:"AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY",
+      tagline:"PART ONE · AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY",
       hero_h1:"Can you turn E20 back into ethanol-free petrol? On the <em>chemistry</em> alone — yes.",
       hero_lede:"Set aside cost, scale, hazard and law. Imagine a world where only the molecules matter. The question is simply whether the chemistry cooperates — and it does. Here is exactly what is happening, step by step.",
       hero_quote:"E20 is just petrol with a fifth of it swapped for ethanol. Ethanol loves water and lifts octane. Take both facts seriously, and the path back to ethanol-free petrol is only separation and re-blending.",
@@ -324,13 +465,66 @@
       ver_p1:"Strip out a solvent that happens to dissolve in water. Replace the octane it was carrying with an aromatic that is not an alcohol. Rebalance how the mixture evaporates. Every one of these is a standard, well-understood operation.",
       ver_p2:"Take away every question of cost, scale, hazard and law — leave only the molecules on the bench — and it resolves cleanly: E20 goes in, ethanol-free petrol near 95 octane comes out.",
       ver_punch:"The science was never the obstacle. Remove ethanol’s water-loving trick and the octane it carried, and <b>what remains is ordinary petrol — plus the octane you blend back in.</b>",
-      foot_disc:"A conceptual science explainer describing why the chemistry works in principle — not a procedure, recipe, or set of operating instructions. The compounds involved are volatile and toxic and the real-world activity carries serious hazards; this page deliberately stays at the level of ideas, not method.",
-      foot_sig:"A thought experiment · only the chemistry · 2026"
+      b_tag:"PART TWO · FROM THE BENCH TO A BUSINESS",
+      b_h1:"The chemistry is only half the question. Could you actually <em>sell</em> it?",
+      b_lede:"Forget brewing it. Suppose you simply import genuine competition fuel and sell it, legally, through a racetrack you already own. Here is whether that holds up as a business — demand, rules, costs and all.",
+      b_quote:"Sell unleaded competition fuel for track use — the same lane existing race-fuel vendors live in. What a customer does after the gate is their call, not the track’s.",
+      b_who:"THE MODEL, STATED HONESTLY",
+      b1_ch:"B1 — THE DEMAND",
+      b1_h:"A real pain, looking for a fix",
+      b1_sub:"From April 2026 all Indian petrol is E20 at 95 RON minimum — nationwide, no owner opt-out, and the Supreme Court declined a plea to guarantee ethanol-free supply. Trouble is, plenty of pre-2023 performance bikes were only ever rated for E10.",
+      b1a_h:"Kawasaki Z900 / Z900 RS", b1a_p:"Rated E10 max, unleaded only — never leaded.",
+      b1b_h:"Kawasaki Ninja 1000 SX (pre-2023)", b1b_p:"E10 max — the very owner who first raised the alarm.",
+      b1c_h:"KTM supermoto / SMC class", b1c_p:"Rated E10 from model year 2000 onward.",
+      b1d_h:"Japanese inline-fours, 2007–2022", b1d_p:"Typical of the segment — all E10-rated.",
+      b1_note:"The risk isn’t a sudden breakdown — it’s long-term wear to injectors, pumps and seals, a 3–7% mileage drop, and moisture pickup in storage.",
+      b2_ch:"B2 — THE MODEL",
+      b2_h:"The clean core, and the line you don’t cross",
+      b2a_h:"The legal core", b2a_p:"A PESO-licensed installation stocks unleaded, low/zero-ethanol competition fuel and sells it for track and off-road use. Anchor it with track days and sanctioned events.", b2a_t:"LAWFUL · ESTABLISHED LANE",
+      b2b_h:"The grey zone", b2b_p:"A rider who fills up “for the track” and then heads onto the road is making a personal choice. Keep the fuel unleaded, and never market it as a road-fuel workaround.", b2b_t:"CUSTOMER’S CALL · NEVER ADVERTISE",
+      b3_ch:"B3 — THE RULE-BOOKS",
+      b3_h:"Five regimes you have to satisfy",
+      b3a_h:"PESO storage & dispensing", b3a_p:"Past ~30 litres you need a licence, approved tanks, flameproof electricals and fire safety.",
+      b3b_h:"Import permission & customs", b3b_p:"Imported race fuel needs PESO import permission plus customs clearance — and heavy duty.",
+      b3c_h:"BIS retail spec", b3c_p:"Race fuel isn’t road-legal spec, so it may only be sold for competition / off-road use.",
+      b3d_h:"Leaded-petrol road ban", b3d_p:"Stay unleaded and the customer never trips the one clear personal offence.",
+      b3e_h:"Fuel excise", b3e_p:"India taxes fuel at the gate by product, not by use — so there’s no red-diesel-style trap for petrol.",
+      b4_ch:"B4 — THE NUMBERS",
+      b4_h:"What it costs, what it fetches",
+      b4_sub:"One-time setup runs roughly ₹22–70 lakh, assuming the track already exists. Per litre, the economics look like this.",
+      b4a:"LANDED COST / L", b4b:"TRACK RETAIL / L", b4c:"GROSS MARGIN",
+      b4_note:"Several times the pump price — exactly how niche race fuel is priced the world over.",
+      b5_ch:"B5 — THE UPSIDE",
+      b5_h:"Three years, three ways it runs",
+      b5_sub:"Gross margin modelled at ₹500 a litre, bolted onto a track you already operate.",
+      b5a:"Conservative · 4,000 L/yr", b5b:"Moderate · 18,000 L/yr", b5c:"Optimistic · 48,000 L/yr",
+      b5_note:"A modest small-business line — and only because the track’s fixed costs are already paid for.",
+      b6_ch:"B6 — THE RISKS",
+      b6_h:"Where it can go wrong",
+      b6a_h:"Marketing drift", b6a_p:"Imply road use and the whole legal core collapses.",
+      b6b_h:"Leaded fuel", b6b_p:"Stocking it pushes a road offence onto your customers — stay unleaded.",
+      b6c_h:"Customs end-use", b6c_p:"Sporting-use import concessions can bite if fuel is diverted; price at full duty.",
+      b6d_h:"Safety & liability", b6d_p:"Class-A petroleum storage is high-hazard, with serious fire and insurance exposure.",
+      b6e_h:"Policy drift", b6e_p:"E22–E30 and flex-fuel are coming; the anxiety window may narrow over time.",
+      b7_ch:"B7 — THE BIGGER PLAY",
+      b7_h:"The cleaner business hiding inside",
+      b7_sub:"Target the anxiety, not the molecule, and the market gets larger while the licensing burden disappears.",
+      b7a_h:"Ethanol-mitigation products", b7a_p:"Corrosion inhibitors, water-dispersants, ethanol-resistant lines and seals, tank treatments. No PESO, no BIS conflict.",
+      b7b_h:"Premium vehicle care & storage", b7b_p:"Climate-controlled storage and fuel management for collectible bikes — the owners with both the worry and the budget.",
+      b7c_h:"Licensed track-day supply", b7c_p:"Partner with circuits and FMSCI events so genuine on-track demand carries the fuel line.",
+      bv_eye:"THE BOTTOM LINE",
+      bv_h:"Viable — but only bolted onto a track you already own",
+      bv_p1:"As a small, disciplined add-on, an unleaded competition-fuel line is plausible and legal. As a reason to build a circuit or chase road-fuel demand, it fails: the market is tiny, the safety and compliance load is heavy, and the one big demand pool — road users — is exactly the one you cannot advertise to.",
+      bv_p2:"India taxes fuel at the gate, has no red-diesel trap, and doesn’t test fuel roadside — so unleaded competition fuel, your own track, and a customer who simply leaves the gate is about as clean as Indian fuel law allows.",
+      bv_punch:"The catch was never legal. It’s commercial: <b>the market you can lawfully serve is a sliver of the market that actually wants it.</b>",
+      foot_disc:"A two-part thought experiment: the chemistry of why un-blending E20 is possible in principle, and a speculative look at whether selling competition fuel through a racetrack could work as a business. It is not legal, financial or engineering advice, and not a procedure or operating manual. The compounds involved are volatile and toxic and the real-world activity carries serious hazards and regulatory limits — verify everything with licensed professionals.",
+      foot_sig:"A thought experiment · the chemistry & the business · 2026"
     },
     hi: {
       cta:"मुझे दिलचस्पी है",
+      nav1:"रसायन", nav2:"व्यवसाय",
       brand:"ईंधन प्रयोगशाला",
-      tagline:"एक आदर्श-दुनिया विचार-प्रयोग — सिर्फ़ रसायन",
+      tagline:"भाग एक · एक आदर्श-दुनिया विचार-प्रयोग — सिर्फ़ रसायन",
       hero_h1:"क्या E20 को वापस एथेनॉल-फ्री पेट्रोल बनाया जा सकता है? सिर्फ़ <em>रसायन</em> के आधार पर — हाँ।",
       hero_lede:"लागत, पैमाना, ख़तरा और क़ानून एक तरफ़ रख दें। एक ऐसी दुनिया की कल्पना करें जहाँ सिर्फ़ अणु मायने रखते हैं। सवाल बस इतना है कि क्या रसायन साथ देता है — और देता है। आइए देखें, कदम-दर-कदम, हो क्या रहा है।",
       hero_quote:"E20 बस पेट्रोल है जिसका पाँचवाँ हिस्सा एथेनॉल से बदला गया है। एथेनॉल को पानी पसंद है और वह ऑक्टेन बढ़ाता है। इन दोनों तथ्यों को गंभीरता से लें, तो एथेनॉल-फ्री पेट्रोल तक का रास्ता सिर्फ़ अलगाव और फिर से मिलाना है।",
@@ -369,8 +563,60 @@
       ver_p1:"एक ऐसे विलायक को निकालो जो संयोग से पानी में घुल जाता है। उसके द्वारा ले जाया जा रहा ऑक्टेन एक ऐसे एरोमैटिक से बदलो जो अल्कोहल नहीं है। मिश्रण कैसे वाष्पित होता है, उसे फिर से संतुलित करो। इनमें से हर एक मानक, भली-भाँति समझी गई क्रिया है।",
       ver_p2:"लागत, पैमाने, ख़तरे और क़ानून का हर सवाल हटा दो — मेज़ पर सिर्फ़ अणु छोड़ दो — और बात साफ़ सुलझ जाती है: E20 अंदर जाता है, 95 ऑक्टेन के क़रीब एथेनॉल-फ्री पेट्रोल बाहर आता है।",
       ver_punch:"रसायन कभी बाधा थी ही नहीं। एथेनॉल की पानी-प्रेमी ख़ूबी और उसके लाए ऑक्टेन को हटा दो, और <b>जो बचता है वह साधारण पेट्रोल है — साथ में वह ऑक्टेन जो आप वापस मिलाते हैं।</b>",
-      foot_disc:"एक वैचारिक विज्ञान व्याख्या जो बताती है कि सिद्धांततः रसायन क्यों काम करता है — कोई प्रक्रिया, विधि या संचालन-निर्देश नहीं। इसमें शामिल यौगिक अस्थिर और ज़हरीले हैं और असल काम गंभीर ख़तरे रखता है; यह पेज जानबूझकर सिर्फ़ विचारों के स्तर पर रहता है, विधि के नहीं।",
-      foot_sig:"एक विचार-प्रयोग · सिर्फ़ रसायन · 2026"
+      b_tag:"भाग दो · प्रयोगशाला से व्यवसाय तक",
+      b_h1:"रसायन तो आधा सवाल है। क्या आप इसे सच में <em>बेच</em> सकते हैं?",
+      b_lede:"बनाना भूल जाइए। मान लीजिए आप बस असली कॉम्पिटिशन फ्यूल इम्पोर्ट करके, क़ानूनी रूप से, अपने ही रेसट्रैक से बेचते हैं। आइए देखें यह एक व्यवसाय के तौर पर टिकता है या नहीं — माँग, नियम, लागत, सब।",
+      b_quote:"ट्रैक उपयोग के लिए अनलेडेड कॉम्पिटिशन फ्यूल बेचो — वही लेन जिसमें मौजूदा रेस-फ्यूल विक्रेता हैं। गेट के बाद ग्राहक क्या करता है, यह उसका फ़ैसला है, ट्रैक का नहीं।",
+      b_who:"मॉडल, ईमानदारी से",
+      b1_ch:"बी1 — माँग",
+      b1_h:"एक असली तकलीफ़, हल की तलाश में",
+      b1_sub:"अप्रैल 2026 से भारत का सारा पेट्रोल कम-से-कम 95 RON पर E20 है — देशव्यापी, मालिक के लिए कोई छूट नहीं, और सुप्रीम कोर्ट ने एथेनॉल-फ्री आपूर्ति की गारंटी माँगती याचिका ठुकरा दी। दिक़्क़त यह कि 2023 से पुरानी कई परफ़ॉर्मेंस बाइक सिर्फ़ E10 के लिए रेटेड थीं।",
+      b1a_h:"कावासाकी Z900 / Z900 RS", b1a_p:"E10 अधिकतम, सिर्फ़ अनलेडेड — कभी लेडेड नहीं।",
+      b1b_h:"कावासाकी निंजा 1000 SX (2023 से पहले)", b1b_p:"E10 अधिकतम — वही मालिक जिसने सबसे पहले चेतावनी दी।",
+      b1c_h:"KTM सुपरमोटो / SMC श्रेणी", b1c_p:"मॉडल वर्ष 2000 से E10 रेटेड।",
+      b1d_h:"जापानी इनलाइन-फ़ोर, 2007–2022", b1d_p:"इस वर्ग की आम बाइकें — सभी E10-रेटेड।",
+      b1_note:"ख़तरा अचानक ख़राबी का नहीं — इंजेक्टर, पंप और सील की दीर्घकालिक घिसाई, 3–7% माइलेज गिरावट, और भंडारण में नमी का जमाव है।",
+      b2_ch:"बी2 — मॉडल",
+      b2_h:"साफ़ केंद्र, और वह रेखा जिसे पार नहीं करना",
+      b2a_h:"क़ानूनी केंद्र", b2a_p:"एक PESO-लाइसेंसी इकाई अनलेडेड, कम/शून्य-एथेनॉल कॉम्पिटिशन फ्यूल रखती है और उसे ट्रैक तथा ऑफ़-रोड उपयोग के लिए बेचती है। ट्रैक डे और मान्यता-प्राप्त इवेंट से इसे मज़बूत करो।", b2a_t:"वैध · स्थापित लेन",
+      b2b_h:"ग्रे ज़ोन", b2b_p:"जो राइडर “ट्रैक के लिए” भरकर सड़क पर निकलता है, वह अपना निजी फ़ैसला कर रहा है। ईंधन अनलेडेड रखो, और इसे कभी सड़क-ईंधन के जुगाड़ के रूप में प्रचारित मत करो।", b2b_t:"ग्राहक का फ़ैसला · कभी विज्ञापन नहीं",
+      b3_ch:"बी3 — नियम-पुस्तिकाएँ",
+      b3_h:"पाँच व्यवस्थाएँ जिन्हें पूरा करना है",
+      b3a_h:"PESO भंडारण और डिस्पेंसिंग", b3a_p:"~30 लीटर के बाद लाइसेंस, स्वीकृत टैंक, फ्लेमप्रूफ़ इलेक्ट्रिकल और फ़ायर सेफ़्टी चाहिए।",
+      b3b_h:"इम्पोर्ट अनुमति और कस्टम", b3b_p:"इम्पोर्टेड रेस फ्यूल को PESO इम्पोर्ट अनुमति और कस्टम क्लियरेंस — और भारी ड्यूटी चाहिए।",
+      b3c_h:"BIS रिटेल स्पेक", b3c_p:"रेस फ्यूल सड़क-वैध स्पेक नहीं है, इसलिए इसे सिर्फ़ कॉम्पिटिशन / ऑफ़-रोड उपयोग के लिए बेचा जा सकता है।",
+      b3d_h:"लेडेड-पेट्रोल सड़क प्रतिबंध", b3d_p:"अनलेडेड रहो और ग्राहक एकमात्र स्पष्ट निजी अपराध से बचा रहता है।",
+      b3e_h:"ईंधन एक्साइज़", b3e_p:"भारत ईंधन पर उपयोग के आधार पर नहीं, उत्पाद के आधार पर गेट पर कर लगाता है — इसलिए पेट्रोल के लिए रेड-डीज़ल जैसा कोई जाल नहीं।",
+      b4_ch:"बी4 — आँकड़े",
+      b4_h:"लागत कितनी, दाम कितना",
+      b4_sub:"एकमुश्त सेटअप क़रीब ₹22–70 लाख, यह मानते हुए कि ट्रैक पहले से मौजूद है। प्रति लीटर अर्थशास्त्र ऐसा दिखता है।",
+      b4a:"लैंडेड लागत / ली", b4b:"ट्रैक रिटेल / ली", b4c:"ग्रॉस मार्जिन",
+      b4_note:"पंप दाम से कई गुना — ठीक वैसे ही जैसे विशिष्ट रेस फ्यूल की क़ीमत पूरी दुनिया में रखी जाती है।",
+      b5_ch:"बी5 — फ़ायदा",
+      b5_h:"तीन साल, तीन तरह से चलता है",
+      b5_sub:"ग्रॉस मार्जिन ₹500 प्रति लीटर पर अनुमानित, एक ऐसे ट्रैक पर जोड़ा गया जिसे आप पहले से चलाते हैं।",
+      b5a:"रूढ़िवादी · 4,000 ली/साल", b5b:"मध्यम · 18,000 ली/साल", b5c:"आशावादी · 48,000 ली/साल",
+      b5_note:"एक मामूली छोटे-व्यवसाय की लाइन — और सिर्फ़ इसलिए कि ट्रैक की स्थायी लागतें पहले से चुकी हुई हैं।",
+      b6_ch:"बी6 — जोखिम",
+      b6_h:"कहाँ ग़लत हो सकता है",
+      b6a_h:"मार्केटिंग का भटकाव", b6a_p:"सड़क उपयोग का इशारा करो और पूरा क़ानूनी केंद्र ढह जाता है।",
+      b6b_h:"लेडेड फ्यूल", b6b_p:"इसे रखना ग्राहकों पर सड़क-अपराध डाल देता है — अनलेडेड रहो।",
+      b6c_h:"कस्टम एंड-यूज़", b6c_p:"स्पोर्टिंग-यूज़ इम्पोर्ट रियायतें तब काट सकती हैं जब ईंधन कहीं और चला जाए; पूरी ड्यूटी पर दाम लगाओ।",
+      b6d_h:"सुरक्षा और देनदारी", b6d_p:"क्लास-A पेट्रोलियम भंडारण उच्च-जोखिम है, गंभीर आग और बीमा जोखिम के साथ।",
+      b6e_h:"नीति का बदलाव", b6e_p:"E22–E30 और फ्लेक्स-फ्यूल आ रहे हैं; घबराहट की खिड़की समय के साथ सिकुड़ सकती है।",
+      b7_ch:"बी7 — बड़ा दाँव",
+      b7_h:"अंदर छिपा साफ़-सुथरा व्यवसाय",
+      b7_sub:"अणु नहीं, घबराहट को निशाना बनाओ, और बाज़ार बड़ा हो जाता है जबकि लाइसेंसिंग का बोझ ग़ायब।",
+      b7a_h:"एथेनॉल-शमन उत्पाद", b7a_p:"करोज़न इनहिबिटर, वॉटर-डिस्पर्सेंट, एथेनॉल-प्रतिरोधी लाइन और सील, टैंक ट्रीटमेंट। न PESO, न BIS टकराव।",
+      b7b_h:"प्रीमियम वाहन देखभाल और भंडारण", b7b_p:"संग्रहणीय बाइकों के लिए जलवायु-नियंत्रित भंडारण और ईंधन प्रबंधन — वे मालिक जिनके पास चिंता भी है और बजट भी।",
+      b7c_h:"लाइसेंसी ट्रैक-डे आपूर्ति", b7c_p:"सर्किट और FMSCI इवेंट के साथ साझेदारी करो ताकि असली ऑन-ट्रैक माँग ईंधन लाइन को संभाले।",
+      bv_eye:"निष्कर्ष",
+      bv_h:"व्यवहार्य — पर सिर्फ़ उस ट्रैक पर जो पहले से आपका है",
+      bv_p1:"एक छोटे, अनुशासित ऐड-ऑन के रूप में, अनलेडेड कॉम्पिटिशन-फ्यूल लाइन संभव और क़ानूनी है। सर्किट बनाने या सड़क-ईंधन माँग का पीछा करने की वजह के रूप में, यह फेल है: बाज़ार बहुत छोटा है, सुरक्षा और अनुपालन का बोझ भारी है, और एकमात्र बड़ी माँग — सड़क उपयोगकर्ता — ठीक वही है जिसका आप विज्ञापन नहीं कर सकते।",
+      bv_p2:"भारत ईंधन पर गेट पर कर लगाता है, कोई रेड-डीज़ल जाल नहीं, और सड़क किनारे ईंधन की जाँच नहीं करता — इसलिए अनलेडेड कॉम्पिटिशन फ्यूल, आपका अपना ट्रैक, और एक ग्राहक जो बस गेट से निकल जाता है, भारतीय ईंधन क़ानून में जितना साफ़ हो सकता है उतना है।",
+      bv_punch:"अड़चन कभी क़ानूनी थी ही नहीं। यह व्यावसायिक है: <b>जिस बाज़ार को आप क़ानूनी रूप से सेवा दे सकते हैं वह उस बाज़ार का एक टुकड़ा भर है जो इसे सचमुच चाहता है।</b>",
+      foot_disc:"दो-भाग का विचार-प्रयोग: सिद्धांततः E20 को अलग करना क्यों संभव है उसका रसायन, और यह काल्पनिक पड़ताल कि रेसट्रैक से कॉम्पिटिशन फ्यूल बेचना एक व्यवसाय के रूप में चल सकता है या नहीं। यह क़ानूनी, वित्तीय या इंजीनियरिंग सलाह नहीं है, न कोई प्रक्रिया या संचालन-पुस्तिका। इसमें शामिल यौगिक अस्थिर और ज़हरीले हैं और असल काम गंभीर ख़तरे तथा नियामक सीमाएँ रखता है — हर बात लाइसेंसधारी पेशेवरों से सत्यापित करें।",
+      foot_sig:"एक विचार-प्रयोग · रसायन और व्यवसाय · 2026"
     }
   };
 
