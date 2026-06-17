@@ -36,6 +36,12 @@
   .switch button.active{color:var(--ink);}
   .switch button.active::after{content:""; position:absolute; left:4px; right:4px; bottom:0; height:2px; background:var(--teal);}
   .switch .sep{color:var(--rule); align-self:center;}
+  .bar-right{display:flex; align-items:center; gap:16px;}
+  .cta{font-family:var(--mono); font-size:13px; text-decoration:none; color:#fff; background:var(--teal);
+       padding:8px 15px; border-radius:999px; white-space:nowrap; transition:transform .15s ease, opacity .15s ease;}
+  .cta:hover{opacity:.92; transform:translateY(-1px);}
+  .cta:active{transform:translateY(0);}
+  @media(max-width:480px){ .mark span{display:none;} .bar-right{gap:10px;} .cta{padding:7px 12px;} }
 
   /* ---- hero ---- */
   .hero{padding:72px 0 30px;}
@@ -145,10 +151,13 @@
       </svg>
       <span data-k="brand">THE FUEL LAB</span>
     </div>
-    <div class="switch" role="group" aria-label="Language">
-      <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
-      <span class="sep">/</span>
-      <button type="button" id="btn-hi" onclick="setLang('hi')">हिं</button>
+    <div class="bar-right">
+      <a class="cta" data-k="cta" href="https://forms.gle/qzTyyiwq8wVg5S1R6" target="_blank" rel="noopener">I’m interested</a>
+      <div class="switch" role="group" aria-label="Language">
+        <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <span class="sep">/</span>
+        <button type="button" id="btn-hi" onclick="setLang('hi')">हिं</button>
+      </div>
     </div>
   </div>
 </div>
@@ -274,6 +283,7 @@
 <script>
   const T = {
     en: {
+      cta:"I’m interested",
       brand:"THE FUEL LAB",
       tagline:"AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY",
       hero_h1:"Can you turn E20 back into ethanol-free petrol? On the <em>chemistry</em> alone — yes.",
@@ -318,6 +328,7 @@
       foot_sig:"A thought experiment · only the chemistry · 2026"
     },
     hi: {
+      cta:"मुझे दिलचस्पी है",
       brand:"ईंधन प्रयोगशाला",
       tagline:"एक आदर्श-दुनिया विचार-प्रयोग — सिर्फ़ रसायन",
       hero_h1:"क्या E20 को वापस एथेनॉल-फ्री पेट्रोल बनाया जा सकता है? सिर्फ़ <em>रसायन</em> के आधार पर — हाँ।",
