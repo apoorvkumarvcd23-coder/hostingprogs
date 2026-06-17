@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Grand Unified Ethanol-Avoidance Enterprise</title>
+<title>The Chemistry of Un-Blending E20 Petrol</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   :root{
     --paper:#f4efe3; --paper2:#ece4d3; --card:#f9f5ec;
     --ink:#1c1b16; --ink2:#4a463b; --rule:#cdc4ae;
-    --burnt:#bb4d18; --rust:#9e2b1e; --moss:#34624a; --lcd:#e0a02a; --lcdbg:#16170f;
+    --burnt:#bb4d18; --rust:#9e2b1e; --moss:#34624a; --teal:#2a6f7a; --lcd:#e0a02a; --lcdbg:#16170f;
     --serif:"Fraunces",Georgia,serif; --read:"Newsreader",Georgia,serif; --mono:"Space Mono",ui-monospace,monospace;
   }
   *{box-sizing:border-box;}
@@ -23,7 +23,7 @@
     background-image:repeating-linear-gradient(180deg, transparent 0 38px, rgba(120,105,70,.05) 38px 39px);
   }
   .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
-  ::selection{background:var(--burnt); color:#fff;}
+  ::selection{background:var(--teal); color:#fff;}
 
   /* ---- top bar ---- */
   .bar{position:sticky; top:0; z-index:40; background:rgba(244,239,227,.9);
@@ -34,15 +34,15 @@
   .switch{display:flex; gap:4px; font-family:var(--mono); font-size:13px;}
   .switch button{border:0; background:none; cursor:pointer; font:inherit; color:var(--ink2); padding:6px 4px; position:relative;}
   .switch button.active{color:var(--ink);}
-  .switch button.active::after{content:""; position:absolute; left:4px; right:4px; bottom:0; height:2px; background:var(--burnt);}
+  .switch button.active::after{content:""; position:absolute; left:4px; right:4px; bottom:0; height:2px; background:var(--teal);}
   .switch .sep{color:var(--rule); align-self:center;}
 
   /* ---- hero ---- */
   .hero{padding:72px 0 30px;}
-  .tagline{font-family:var(--mono); font-size:12.5px; letter-spacing:.04em; color:var(--burnt); margin:0 0 22px;}
-  .hero h1{font-family:var(--serif); font-weight:900; font-size:clamp(36px,7vw,64px); line-height:1.02; letter-spacing:-.015em; margin:0 0 22px;}
-  .hero h1 em{font-style:italic; font-weight:600; color:var(--burnt);}
-  .lede{font-size:clamp(18px,2.5vw,22px); color:var(--ink2); max-width:580px; margin:0;}
+  .tagline{font-family:var(--mono); font-size:12.5px; letter-spacing:.04em; color:var(--teal); margin:0 0 22px;}
+  .hero h1{font-family:var(--serif); font-weight:900; font-size:clamp(34px,6.6vw,60px); line-height:1.03; letter-spacing:-.015em; margin:0 0 22px;}
+  .hero h1 em{font-style:italic; font-weight:600; color:var(--teal);}
+  .lede{font-size:clamp(18px,2.5vw,22px); color:var(--ink2); max-width:600px; margin:0;}
 
   .pull{margin:40px 0 8px; padding:6px 0 6px 24px; border-left:3px solid var(--ink); max-width:600px;}
   .pull p{font-family:var(--read); font-style:italic; font-size:21px; line-height:1.5; margin:0;}
@@ -50,7 +50,7 @@
 
   /* ---- chapter heads ---- */
   section{padding:54px 0; border-top:1px solid var(--rule);}
-  .chno{font-family:var(--mono); font-size:13px; color:var(--burnt); letter-spacing:.05em;}
+  .chno{font-family:var(--mono); font-size:13px; color:var(--teal); letter-spacing:.05em;}
   h2{font-family:var(--serif); font-weight:600; font-size:clamp(26px,4.6vw,40px); line-height:1.08; letter-spacing:-.01em; margin:6px 0 12px;}
   .sub{color:var(--ink2); max-width:600px; margin:0 0 30px;}
 
@@ -59,69 +59,66 @@
   .rv.in{opacity:1; transform:none;}
   .d1{transition-delay:.08s;} .d2{transition-delay:.16s;} .d3{transition-delay:.24s;} .d4{transition-delay:.32s;}
 
-  /* two options */
+  /* two composition cards */
   .opts{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
   .opt{background:var(--card); border:1px solid var(--rule); padding:24px;}
-  .opt .lab{font-family:var(--mono); font-size:12px; color:var(--ink2);}
-  .opt h3{font-family:var(--serif); font-weight:600; font-size:22px; margin:6px 0 10px;}
-  .opt p{font-size:16px; color:var(--ink2); margin:0 0 16px;}
-  .price{font-family:var(--mono); font-weight:700; font-size:15px; color:var(--moss); border-top:1px dashed var(--rule); padding-top:14px;}
+  .opt .pct{font-family:var(--serif); font-weight:900; font-size:40px; line-height:1; letter-spacing:-.02em;}
+  .opt h3{font-family:var(--serif); font-weight:600; font-size:21px; margin:10px 0 10px;}
+  .opt p{font-size:16px; color:var(--ink2); margin:0 0 14px;}
+  .opt .form{font-family:var(--mono); font-size:13px; color:var(--teal); border-top:1px dashed var(--rule); padding-top:14px;}
 
-  /* pump display */
+  /* spec readout */
   .pump{background:var(--lcdbg); border-radius:10px; padding:26px 22px; box-shadow:inset 0 2px 14px rgba(0,0,0,.6);}
   .pump-row{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; text-align:center;}
   .cell .rd{font-family:var(--mono); font-weight:700; font-size:clamp(24px,5.4vw,42px); color:var(--lcd); text-shadow:0 0 12px rgba(224,160,42,.4); line-height:1;}
-  .cell .rd.win{color:#9fe07a; text-shadow:0 0 12px rgba(120,220,90,.4);}
+  .cell .rd.win{color:#7fd0dc; text-shadow:0 0 12px rgba(90,200,220,.4);}
   .cell .cl{font-family:var(--mono); font-size:11px; color:#9b9279; margin-top:10px; letter-spacing:.03em;}
   .pump-note{font-family:var(--mono); font-size:13px; color:var(--ink2); margin:18px 0 0; text-align:center;}
 
-  /* build steps: editorial numbered list */
+  /* process flow */
+  .flow{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-bottom:30px;}
+  .chip{font-family:var(--mono); font-size:13px; padding:9px 13px; border:1px solid var(--rule); background:var(--card); white-space:nowrap;}
+  .chip.in0{border-color:var(--ink2);} .chip.out{border-color:var(--moss); color:var(--moss); font-weight:700;}
+  .arrow{font-family:var(--mono); color:var(--burnt); font-size:15px;}
+
+  /* process steps */
   .st{display:grid; grid-template-columns:48px 1fr; gap:18px; padding:22px 0; border-bottom:1px solid var(--rule);}
   .st:last-child{border-bottom:0;}
-  .st .num{font-family:var(--mono); font-size:14px; color:var(--burnt); padding-top:5px;}
+  .st .num{font-family:var(--mono); font-size:14px; color:var(--teal); padding-top:5px;}
   .st h3{font-family:var(--serif); font-weight:600; font-size:21px; margin:0 0 6px; line-height:1.15;}
   .st p{margin:0; font-size:16px; color:var(--ink2);}
-  .st .meta{font-family:var(--mono); font-size:13px; color:var(--moss); margin-top:8px;}
+  .st .meta{font-family:var(--mono); font-size:13px; color:var(--teal); margin-top:8px;}
 
-  /* bars */
+  /* octane bars */
   .bars{display:flex; flex-direction:column; gap:14px;}
   .brow .top{display:flex; justify-content:space-between; font-family:var(--mono); font-size:13px; margin-bottom:6px;}
   .brow .amt{color:var(--ink2);}
   .track{height:30px; background:var(--paper2); border:1px solid var(--rule); overflow:hidden;}
   .fill{height:100%; transform:scaleX(0); transform-origin:left; transition:transform 1.1s cubic-bezier(.2,.7,.2,1);}
   .bars.in .fill{transform:scaleX(1);}
-  .r1{background:#7aa78c; width:14%;} .r2{background:var(--moss); width:42%;} .r3{background:#21422f; width:100%;}
-  .f1{background:#7aa78c; width:30%;} .f2{background:var(--burnt); width:46%;} .f3{background:var(--rust); width:100%;}
-  .fsum{background:var(--ink); width:100%;}
-  .bars.in .fill:nth-child(1){transition-delay:.05s;}
+  .o1{background:#b6ab8e; width:27.5%;} .o2{background:var(--moss); width:37.5%;}
+  .o3{background:var(--burnt); width:72.5%;} .o4{background:var(--teal); width:85%;}
   .bars.in .brow:nth-child(1) .fill{transition-delay:.05s;}
   .bars.in .brow:nth-child(2) .fill{transition-delay:.2s;}
   .bars.in .brow:nth-child(3) .fill{transition-delay:.35s;}
-  .bars.in .brow:nth-child(4) .fill{transition-delay:.55s;}
+  .bars.in .brow:nth-child(4) .fill{transition-delay:.5s;}
+  .scale{font-family:var(--mono); font-size:11px; color:var(--ink2); display:flex; justify-content:space-between; margin-top:4px;}
 
-  /* product spec grid */
+  /* concepts glossary */
   .led{border-top:1px solid var(--rule);}
   .lrow{display:grid; grid-template-columns:42px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--rule); align-items:baseline;}
-  .lrow .ix{font-family:var(--mono); font-size:13px; color:var(--burnt);}
+  .lrow .ix{font-family:var(--mono); font-size:13px; color:var(--teal);}
   .lrow h4{font-family:var(--serif); font-weight:600; font-size:18px; margin:0 0 3px;}
   .lrow p{margin:0; font-size:15px; color:var(--ink2);}
 
-  /* roadmap */
-  .lad{display:flex; flex-direction:column;}
-  .rung{display:grid; grid-template-columns:46px 1fr; gap:18px; padding:20px 0; border-bottom:1px solid var(--rule); align-items:start;}
-  .rung:first-child{border-top:1px solid var(--rule);}
-  .rung .stp{font-family:var(--serif); font-weight:900; font-size:30px; color:var(--rule); line-height:1;}
-  .rung h4{font-family:var(--serif); font-weight:600; font-size:19px; margin:0 0 4px;}
-  .rung p{margin:0; font-size:15px; color:var(--ink2);}
-
-  /* vision */
+  /* ideal case */
   .verdict{background:var(--ink); color:#f1e8d8; padding:0; border:0;}
   .verdict .wrap{padding:64px 24px;}
   .verdict .chno{color:var(--lcd);}
   .verdict h2{color:#fff; max-width:600px;}
   .verdict p{color:#cfc6b4; max-width:560px;}
   .verdict .punch{font-family:var(--serif); font-size:clamp(20px,3vw,26px); line-height:1.35; color:#fff; max-width:600px; margin-top:26px; padding-top:26px; border-top:1px solid #3a352b;}
-  .verdict .punch b{color:var(--lcd); font-weight:600;}
+  .verdict .punch b{color:#7fd0dc; font-weight:600;}
 
   footer{border-top:1px solid var(--rule); padding:34px 0 60px;}
   footer p{font-family:var(--mono); font-size:12.5px; color:var(--ink2); line-height:1.7; max-width:600px; margin:0 auto 12px;}
@@ -144,10 +141,9 @@
   <div class="wrap">
     <div class="mark">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="3" y="3" width="9" height="18" rx="1"/><line x1="3" y1="9" x2="12" y2="9"/>
-        <path d="M12 7h4l3 3v8a2 2 0 0 1-2 2"/><circle cx="17" cy="13" r="1.4"/>
+        <path d="M9 3h6"/><path d="M10 3v6.5L5 18a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-8.5V3"/><line x1="8" y1="14" x2="16" y2="14"/>
       </svg>
-      <span data-k="brand">THE FUEL ENTERPRISE</span>
+      <span data-k="brand">THE FUEL LAB</span>
     </div>
     <div class="switch" role="group" aria-label="Language">
       <button type="button" id="btn-en" class="active" onclick="setLang('en')">EN</button>
@@ -159,33 +155,33 @@
 
 <header class="hero">
   <div class="wrap">
-    <p class="tagline rv" data-k="tagline">A VERTICALLY-INTEGRATED FUEL EMPIRE — BENGALURU, 2026</p>
-    <h1 class="rv d1" data-k="hero_h1">Make it for ₹165. Sell it for ₹1,500. Pocket the <em>rest</em>.</h1>
-    <p class="lede rv d2" data-k="hero_lede">One blueprint that joins two clever ideas into a single money machine: brew premium ethanol-free fuel at home for almost nothing, then sell it through your own racetrack at race-fuel prices. Here is exactly how the dream gets built.</p>
+    <p class="tagline rv" data-k="tagline">AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY</p>
+    <h1 class="rv d1" data-k="hero_h1">Can you turn E20 back into ethanol-free petrol? On the <em>chemistry</em> alone — yes.</h1>
+    <p class="lede rv d2" data-k="hero_lede">Set aside cost, scale, hazard and law. Imagine a world where only the molecules matter. The question is simply whether the chemistry cooperates — and it does. Here is exactly what is happening, step by step.</p>
     <div class="pull rv d3">
-      <p data-k="hero_quote">“What if I make the cheap fuel and sell it through my racetrack? Make at ₹165, sell at ₹1,500, keep ₹1,335 a litre. The track makes selling it legal, the home-brew makes the cost tiny. Synergy. I am a genius.”</p>
-      <span class="by" data-k="hero_who">THE FOUNDER, LEANING BACK IN HIS CHAIR</span>
+      <p data-k="hero_quote">E20 is just petrol with a fifth of it swapped for ethanol. Ethanol loves water and lifts octane. Take both facts seriously, and the path back to ethanol-free petrol is only separation and re-blending.</p>
+      <span class="by" data-k="hero_who">THE PREMISE, IN ONE BREATH</span>
     </div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <span class="chno rv" data-k="ch01">01 — THE OPENING</span>
-    <h2 class="rv" data-k="setup_h2">A whole market, sitting there waiting</h2>
-    <p class="sub rv" data-k="setup_sub">India’s petrol went E20 — a fifth ethanol — in April 2026. Thousands of pre-2023 superbikes were built for less. Their owners are anxious, vocal, and short on options: the one domestic clean fuel, XP100, is scarce and pricey. Demand is real. Two doors lead in.</p>
+    <span class="chno rv" data-k="ch01">01 — WHAT E20 ACTUALLY IS</span>
+    <h2 class="rv" data-k="setup_h2">Two liquids sharing one tank</h2>
+    <p class="sub rv" data-k="setup_sub">E20 is twenty percent ethanol blended into ordinary petrol. The two components behave very differently — and that difference is the entire reason the blend can be undone.</p>
     <div class="opts">
       <div class="opt rv d1">
-        <span class="lab" data-k="opt1_lab">DOOR A</span>
-        <h3 data-k="opt1_h">Import race fuel</h3>
-        <p data-k="opt1_p">Genuine competition fuel, sold legally for track use — the lane real race-fuel vendors already live in. Premium pricing baked in.</p>
-        <div class="price" data-k="opt1_t">retails at ₹1,100–1,800 / litre</div>
+        <span class="pct">80%</span>
+        <h3 data-k="opt1_h">Gasoline</h3>
+        <p data-k="opt1_p">A mixture of hydrocarbons. Non-polar, so it does not mix with water. It carries most of the fuel’s energy.</p>
+        <div class="form" data-k="opt1_t">NON-POLAR · HYDROPHOBIC</div>
       </div>
       <div class="opt rv d2">
-        <span class="lab" data-k="opt2_lab">DOOR B</span>
-        <h3 data-k="opt2_h">Brew it yourself</h3>
-        <p data-k="opt2_p">Pull the ethanol back out of pump petrol and rebuild the octane. The chemistry is known and the cost is tiny.</p>
-        <div class="price" data-k="opt2_t">costs only ~₹165 / litre to make</div>
+        <span class="pct">20%</span>
+        <h3 data-k="opt2_h">Ethanol</h3>
+        <p data-k="opt2_p">A small polar alcohol, C₂H₅OH. It dissolves freely in water, absorbs moisture from the air, and raises the blend’s octane.</p>
+        <div class="form" data-k="opt2_t">POLAR · WATER-SOLUBLE · HIGH OCTANE</div>
       </div>
     </div>
   </div>
@@ -193,214 +189,177 @@
 
 <section>
   <div class="wrap">
-    <span class="chno rv" data-k="ch02">02 — THE MAGIC NUMBER</span>
-    <h2 class="rv" data-k="dream_h2">Now walk both doors at once</h2>
-    <p class="sub rv" data-k="dream_sub">Brew through Door B, sell through Door A. The cost comes from one scheme, the price from the other, and the gap between them is yours. On the pump display it reads like this.</p>
+    <span class="chno rv" data-k="ch02">02 — THE GOAL, ON A SPEC SHEET</span>
+    <h2 class="rv" data-k="dream_h2">What has to be true at the end</h2>
+    <p class="sub rv" data-k="dream_sub">Same petrol, same octane class, but with the ethanol gone. Three numbers define success.</p>
     <div class="pump rv d1">
       <div class="pump-row">
-        <div class="cell"><div class="rd">₹<span class="count" data-count="165">0</span></div><div class="cl" data-k="dream_cost">COST TO MAKE</div></div>
-        <div class="cell"><div class="rd">₹<span class="count" data-count="1500">0</span></div><div class="cl" data-k="dream_sell">SELL PRICE</div></div>
-        <div class="cell"><div class="rd win">₹<span class="count" data-count="1335">0</span></div><div class="cl" data-k="dream_win">MARGIN / L</div></div>
+        <div class="cell"><div class="rd"><span class="count" data-count="95">0</span></div><div class="cl" data-k="dream_cost">OCTANE · RON</div></div>
+        <div class="cell"><div class="rd"><span class="count" data-count="0" data-from="20">20</span>%</div><div class="cl" data-k="dream_sell">ETHANOL REMAINING</div></div>
+        <div class="cell"><div class="rd win">E0</div><div class="cl" data-k="dream_win">ETHANOL-FREE FORM</div></div>
       </div>
     </div>
-    <p class="pump-note rv d2" data-k="dream_note">A 9× markup, on a product people are already begging for. Here is how you build it.</p>
+    <p class="pump-note rv d2" data-k="dream_note">Start at E20, 95 RON. Finish at E0, still 95 RON. Two operations get you there.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <span class="chno rv" data-k="ch03">03 — THE BUILD</span>
-    <h2 class="rv" data-k="st_h2">Five steps from pump petrol to premium</h2>
+    <span class="chno rv" data-k="ch03">03 — THE PROCESS</span>
+    <h2 class="rv" data-k="st_h2">Pull the ethanol out, put the octane back</h2>
+    <div class="flow rv">
+      <span class="chip in0" data-k="fl1">E20</span><span class="arrow">→</span>
+      <span class="chip" data-k="fl2">water wash</span><span class="arrow">→</span>
+      <span class="chip" data-k="fl3">dry</span><span class="arrow">→</span>
+      <span class="chip" data-k="fl4">+ octane</span><span class="arrow">→</span>
+      <span class="chip" data-k="fl5">trim volatility</span><span class="arrow">→</span>
+      <span class="chip out" data-k="fl6">E0 · 95 RON</span>
+    </div>
     <div class="rv">
-      <div class="st"><div class="num">i.</div><div><h3 data-k="st1_h">Secure the feedstock</h3><p data-k="st1_p">Buy ordinary E20 pump petrol as your raw material — the same stuff in every bowser, available everywhere, all day.</p><div class="meta" data-k="st1_m">INPUT · ₹111 / litre</div></div></div>
-      <div class="st"><div class="num">ii.</div><div><h3 data-k="st2_h">Convert it</h3><p data-k="st2_p">Wash the ethanol out, dry the gasoline, rebuild the lost octane with a non-ethanol source, and trim the volatility. Out comes clean, ethanol-free fuel.</p><div class="meta" data-k="st2_m">OUTPUT · 95 RON · ETHANOL-FREE</div></div></div>
-      <div class="st"><div class="num">iii.</div><div><h3 data-k="st3_h">Stand up the plant</h3><p data-k="st3_p">A small, safe blending line with a validated pilot to start — then scale to a fully validated operation as volume climbs.</p><div class="meta" data-k="st3_m">CAPEX · ₹26.5 lakh → ₹1.06 crore</div></div></div>
-      <div class="st"><div class="num">iv.</div><div><h3 data-k="st4_h">Open the channel</h3><p data-k="st4_p">A licensed fuel dispenser at your racetrack sells competition fuel for track use — the established, legitimate lane. Anchor it with track days and sanctioned events.</p><div class="meta" data-k="st4_m">CHANNEL · PESO-LICENSED DISPENSER</div></div></div>
-      <div class="st"><div class="num">v.</div><div><h3 data-k="st5_h">Price it like race fuel</h3><p data-k="st5_p">Set the forecourt price where premium competition fuel already sits worldwide. Made for ₹165, sold for many times that.</p><div class="meta" data-k="st5_m">RETAIL · ₹1,100–1,800 / litre</div></div></div>
+      <div class="st"><div class="num">i.</div><div><h3 data-k="st1_h">Separate the ethanol</h3><p data-k="st1_p">Add water. Ethanol is far more soluble in water than in petrol, so it migrates into the water and the two liquids settle into distinct layers. The ethanol leaves with the water.</p><div class="meta" data-k="st1_m">PRINCIPLE · LIQUID–LIQUID EXTRACTION</div></div></div>
+      <div class="st"><div class="num">ii.</div><div><h3 data-k="st2_h">Dry the petrol</h3><p data-k="st2_p">The washed petrol now holds a trace of dissolved water. Remove it, and you are back to a clean, water-free hydrocarbon — but one that has lost the octane the ethanol was providing.</p><div class="meta" data-k="st2_m">RESTORE A WATER-FREE HYDROCARBON</div></div></div>
+      <div class="st"><div class="num">iii.</div><div><h3 data-k="st3_h">Rebuild the octane</h3><p data-k="st3_p">Ethanol was also doing chemical work: holding up the octane number. With it gone, octane drops. A high-octane aromatic such as toluene restores it — no alcohol required.</p><div class="meta" data-k="st3_m">PRINCIPLE · OCTANE BLENDING</div></div></div>
+      <div class="st"><div class="num">iv.</div><div><h3 data-k="st4_h">Trim the volatility</h3><p data-k="st4_p">Ethanol changed how readily the fuel evaporates. Rebalance the lighter and heavier fractions so the vapour pressure lands back in the ordinary range for petrol.</p><div class="meta" data-k="st4_m">PRINCIPLE · VAPOUR PRESSURE (RVP)</div></div></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <span class="chno rv" data-k="ch04">04 — THE UPSIDE</span>
-    <h2 class="rv" data-k="rev_h2">Three years, three ways it could go</h2>
-    <p class="sub rv" data-k="rev_sub">Bolt the fuel line onto a track you already run, and the annual gross margin scales straight up with the event calendar.</p>
+    <span class="chno rv" data-k="ch04">04 — THE OCTANE QUESTION</span>
+    <h2 class="rv" data-k="oct_h2">Why toluene can stand in for ethanol</h2>
+    <p class="sub rv" data-k="oct_sub">Octane is a number — resistance to knock. Ethanol was holding it up; once stripped, the bare petrol sits below target. A more potent octane component closes the gap.</p>
     <div class="bars rv d1">
-      <div class="brow"><div class="top"><span data-k="rev_b1">Conservative · 4,000 L/yr</span><span class="amt">₹20 lakh</span></div><div class="track"><div class="fill r1"></div></div></div>
-      <div class="brow"><div class="top"><span data-k="rev_b2">Moderate · 18,000 L/yr</span><span class="amt">₹90 lakh</span></div><div class="track"><div class="fill r2"></div></div></div>
-      <div class="brow"><div class="top"><span data-k="rev_b3">Optimistic · 48,000 L/yr</span><span class="amt">₹2.4 crore</span></div><div class="track"><div class="fill r3"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="oct_b1">Petrol, ethanol stripped out</span><span class="amt">≈ 91 RON</span></div><div class="track"><div class="fill o1"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="oct_b2">Finished, ethanol-free target</span><span class="amt">≈ 95 RON</span></div><div class="track"><div class="fill o2"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="oct_b3">Ethanol, as a blendstock</span><span class="amt">≈ 109 RON</span></div><div class="track"><div class="fill o3"></div></div></div>
+      <div class="brow"><div class="top"><span data-k="oct_b4">Toluene, as a blendstock</span><span class="amt">≈ 114 RON</span></div><div class="track"><div class="fill o4"></div></div></div>
     </div>
-    <p class="pump-note rv d2" data-k="rev_note">Gross margin, modelled at ₹500 a litre — and that is before you ever push the price toward the full ₹1,335 spread.</p>
+    <div class="scale rv d2"><span>80 RON</span><span>120 RON</span></div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <span class="chno rv" data-k="ch05">05 — THE OUTLAY</span>
-    <h2 class="rv" data-k="cap_h2">What it takes to stand it all up</h2>
-    <p class="sub rv" data-k="cap_sub">Treat the track as the asset you already own. The fuel empire bolts on for a fraction of it.</p>
-    <div class="bars rv d1">
-      <div class="brow"><div class="top"><span data-k="cap_b1">Blending plant</span><span class="amt">₹0.26–1.06 cr</span></div><div class="track"><div class="fill f1"></div></div></div>
-      <div class="brow"><div class="top"><span data-k="cap_b2">Licensed storage &amp; dispenser</span><span class="amt">₹0.22–0.70 cr</span></div><div class="track"><div class="fill f2"></div></div></div>
-      <div class="brow"><div class="top"><span data-k="cap_b3">The racetrack (already yours)</span><span class="amt">₹50–200+ cr</span></div><div class="track"><div class="fill f3"></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <span class="chno rv" data-k="ch06">06 — THE PRODUCT</span>
-    <h2 class="rv" data-k="prod_h2">What rolls off the line</h2>
+    <span class="chno rv" data-k="ch05">05 — THE CONCEPTS</span>
+    <h2 class="rv" data-k="prod_h2">The handful of ideas doing the work</h2>
     <div class="led rv d1">
-      <div class="lrow"><span class="ix">01</span><div><h4 data-k="prod1_h">~95 RON, ethanol-free</h4><p data-k="prod1_p">Clean petrol with the ethanol stripped out — exactly what the anxious owners are chasing.</p></div></div>
-      <div class="lrow"><span class="ix">02</span><div><h4 data-k="prod2_h">Unleaded by design</h4><p data-k="prod2_p">Keeps catalytic converters and sensors happy, and keeps the rider on the clean side of the line.</p></div></div>
-      <div class="lrow"><span class="ix">03</span><div><h4 data-k="prod3_h">A premium label</h4><p data-k="prod3_p">Sit it beside Sunoco, VP Racing and Elf on the shelf — your own track-poured house brand.</p></div></div>
-      <div class="lrow"><span class="ix">04</span><div><h4 data-k="prod4_h">Track-day ready</h4><p data-k="prod4_p">Sold for competition and off-road use, poured right where it is burned.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <span class="chno rv" data-k="ch07">07 — THE ROADMAP</span>
-    <h2 class="rv" data-k="lad_h2">From one bowser to an empire</h2>
-    <div class="lad rv d1">
-      <div class="rung"><span class="stp">1</span><div><h4 data-k="lad1_h">Pilot batch</h4><p data-k="lad1_p">Brew the first drums, validate the spec, pour it at your own track days.</p></div></div>
-      <div class="rung"><span class="stp">2</span><div><h4 data-k="lad2_h">Licensed forecourt</h4><p data-k="lad2_p">Stand up the PESO dispenser and start serving every competitor who rolls in.</p></div></div>
-      <div class="rung"><span class="stp">3</span><div><h4 data-k="lad3_h">House brand</h4><p data-k="lad3_p">Bottle it, badge it, build a following among premium-bike owners.</p></div></div>
-      <div class="rung"><span class="stp">4</span><div><h4 data-k="lad4_h">Event engine</h4><p data-k="lad4_p">Pack the calendar with sanctioned races so genuine on-track demand never stops.</p></div></div>
-      <div class="rung"><span class="stp">5</span><div><h4 data-k="lad5_h">Replicate the model</h4><p data-k="lad5_p">One track proven, roll the same fuel-and-circuit playbook out across the country.</p></div></div>
+      <div class="lrow"><span class="ix">01</span><div><h4 data-k="prod1_h">Octane (RON)</h4><p data-k="prod1_p">A fuel’s resistance to knock. Higher numbers tolerate higher compression without igniting early.</p></div></div>
+      <div class="lrow"><span class="ix">02</span><div><h4 data-k="prod2_h">Knock</h4><p data-k="prod2_p">Uncontrolled, premature combustion that stresses an engine. Octane is what holds it off.</p></div></div>
+      <div class="lrow"><span class="ix">03</span><div><h4 data-k="prod3_h">Hygroscopic</h4><p data-k="prod3_p">Ethanol pulls water out of the air. It is why ethanol blends and moisture do not get along.</p></div></div>
+      <div class="lrow"><span class="ix">04</span><div><h4 data-k="prod4_h">Liquid–liquid extraction</h4><p data-k="prod4_p">Using one liquid (water) to pull a compound (ethanol) out of another liquid (petrol).</p></div></div>
+      <div class="lrow"><span class="ix">05</span><div><h4 data-k="prod5_h">Reid vapour pressure</h4><p data-k="prod5_p">How readily fuel evaporates. Too high and it vapour-locks; too low and it will not cold-start.</p></div></div>
+      <div class="lrow"><span class="ix">06</span><div><h4 data-k="prod6_h">Aromatics</h4><p data-k="prod6_p">Ring-shaped hydrocarbons such as toluene, naturally high in octane.</p></div></div>
     </div>
   </div>
 </section>
 
 <section class="verdict">
   <div class="wrap">
-    <span class="chno rv" data-k="ver_eye">THE VISION</span>
-    <h2 class="rv d1" data-k="ver_h">Cheap to make, dear to sell, legal to pour</h2>
-    <p class="rv d2" data-k="ver_p1">Every piece reinforces the next. The home-brew crushes the cost. The racetrack opens the channel. The ethanol panic supplies the customers. And the gap between ₹165 and ₹1,500 falls, litre after litre, straight to the founder.</p>
-    <p class="rv d2" data-k="ver_p2">A premium fuel that costs almost nothing, a captive market already lining up, and a forecourt nobody can say no to.</p>
-    <p class="punch rv d3" data-k="ver_punch">Two clever ideas, bolted together into one machine: <b>brew it for a song, sell it for a fortune, and let the track make it all make sense.</b></p>
+    <span class="chno rv" data-k="ver_eye">THE IDEAL CASE</span>
+    <h2 class="rv d1" data-k="ver_h">On the chemistry alone, the loop closes</h2>
+    <p class="rv d2" data-k="ver_p1">Strip out a solvent that happens to dissolve in water. Replace the octane it was carrying with an aromatic that is not an alcohol. Rebalance how the mixture evaporates. Every one of these is a standard, well-understood operation.</p>
+    <p class="rv d2" data-k="ver_p2">Take away every question of cost, scale, hazard and law — leave only the molecules on the bench — and it resolves cleanly: E20 goes in, ethanol-free petrol near 95 octane comes out.</p>
+    <p class="punch rv d3" data-k="ver_punch">The science was never the obstacle. Remove ethanol’s water-loving trick and the octane it carried, and <b>what remains is ordinary petrol — plus the octane you blend back in.</b></p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <p data-k="foot_disc">A speculative thought experiment and a piece of satire — not a build manual, and not legal, financial or engineering advice. In the real world, making motor fuel means handling volatile, toxic chemicals, and at any meaningful scale it is unlawful for a private person in India. Enjoy the fantasy; do not attempt it.</p>
-    <p data-k="foot_sig">A thought experiment · Bengaluru basis · 2026 · Dream big.</p>
+    <p data-k="foot_disc">A conceptual science explainer describing why the chemistry works in principle — not a procedure, recipe, or set of operating instructions. The compounds involved are volatile and toxic and the real-world activity carries serious hazards; this page deliberately stays at the level of ideas, not method.</p>
+    <p data-k="foot_sig">A thought experiment · only the chemistry · 2026</p>
   </div>
 </footer>
 
 <script>
   const T = {
     en: {
-      brand:"THE FUEL ENTERPRISE",
-      tagline:"A VERTICALLY-INTEGRATED FUEL EMPIRE — BENGALURU, 2026",
-      hero_h1:"Make it for ₹165. Sell it for ₹1,500. Pocket the <em>rest</em>.",
-      hero_lede:"One blueprint that joins two clever ideas into a single money machine: brew premium ethanol-free fuel at home for almost nothing, then sell it through your own racetrack at race-fuel prices. Here is exactly how the dream gets built.",
-      hero_quote:"“What if I make the cheap fuel and sell it through my racetrack? Make at ₹165, sell at ₹1,500, keep ₹1,335 a litre. The track makes selling it legal, the home-brew makes the cost tiny. Synergy. I am a genius.”",
-      hero_who:"THE FOUNDER, LEANING BACK IN HIS CHAIR",
-      ch01:"01 — THE OPENING",
-      setup_h2:"A whole market, sitting there waiting",
-      setup_sub:"India’s petrol went E20 — a fifth ethanol — in April 2026. Thousands of pre-2023 superbikes were built for less. Their owners are anxious, vocal, and short on options: the one domestic clean fuel, XP100, is scarce and pricey. Demand is real. Two doors lead in.",
-      opt1_lab:"DOOR A", opt1_h:"Import race fuel", opt1_p:"Genuine competition fuel, sold legally for track use — the lane real race-fuel vendors already live in. Premium pricing baked in.", opt1_t:"retails at ₹1,100–1,800 / litre",
-      opt2_lab:"DOOR B", opt2_h:"Brew it yourself", opt2_p:"Pull the ethanol back out of pump petrol and rebuild the octane. The chemistry is known and the cost is tiny.", opt2_t:"costs only ~₹165 / litre to make",
-      ch02:"02 — THE MAGIC NUMBER",
-      dream_h2:"Now walk both doors at once",
-      dream_sub:"Brew through Door B, sell through Door A. The cost comes from one scheme, the price from the other, and the gap between them is yours. On the pump display it reads like this.",
-      dream_cost:"COST TO MAKE", dream_sell:"SELL PRICE", dream_win:"MARGIN / L",
-      dream_note:"A 9× markup, on a product people are already begging for. Here is how you build it.",
-      ch03:"03 — THE BUILD",
-      st_h2:"Five steps from pump petrol to premium",
-      st1_h:"Secure the feedstock", st1_p:"Buy ordinary E20 pump petrol as your raw material — the same stuff in every bowser, available everywhere, all day.", st1_m:"INPUT · ₹111 / litre",
-      st2_h:"Convert it", st2_p:"Wash the ethanol out, dry the gasoline, rebuild the lost octane with a non-ethanol source, and trim the volatility. Out comes clean, ethanol-free fuel.", st2_m:"OUTPUT · 95 RON · ETHANOL-FREE",
-      st3_h:"Stand up the plant", st3_p:"A small, safe blending line with a validated pilot to start — then scale to a fully validated operation as volume climbs.", st3_m:"CAPEX · ₹26.5 lakh → ₹1.06 crore",
-      st4_h:"Open the channel", st4_p:"A licensed fuel dispenser at your racetrack sells competition fuel for track use — the established, legitimate lane. Anchor it with track days and sanctioned events.", st4_m:"CHANNEL · PESO-LICENSED DISPENSER",
-      st5_h:"Price it like race fuel", st5_p:"Set the forecourt price where premium competition fuel already sits worldwide. Made for ₹165, sold for many times that.", st5_m:"RETAIL · ₹1,100–1,800 / litre",
-      ch04:"04 — THE UPSIDE",
-      rev_h2:"Three years, three ways it could go",
-      rev_sub:"Bolt the fuel line onto a track you already run, and the annual gross margin scales straight up with the event calendar.",
-      rev_b1:"Conservative · 4,000 L/yr", rev_b2:"Moderate · 18,000 L/yr", rev_b3:"Optimistic · 48,000 L/yr",
-      rev_note:"Gross margin, modelled at ₹500 a litre — and that is before you ever push the price toward the full ₹1,335 spread.",
-      ch05:"05 — THE OUTLAY",
-      cap_h2:"What it takes to stand it all up",
-      cap_sub:"Treat the track as the asset you already own. The fuel empire bolts on for a fraction of it.",
-      cap_b1:"Blending plant", cap_b2:"Licensed storage & dispenser", cap_b3:"The racetrack (already yours)",
-      ch06:"06 — THE PRODUCT",
-      prod_h2:"What rolls off the line",
-      prod1_h:"~95 RON, ethanol-free", prod1_p:"Clean petrol with the ethanol stripped out — exactly what the anxious owners are chasing.",
-      prod2_h:"Unleaded by design", prod2_p:"Keeps catalytic converters and sensors happy, and keeps the rider on the clean side of the line.",
-      prod3_h:"A premium label", prod3_p:"Sit it beside Sunoco, VP Racing and Elf on the shelf — your own track-poured house brand.",
-      prod4_h:"Track-day ready", prod4_p:"Sold for competition and off-road use, poured right where it is burned.",
-      ch07:"07 — THE ROADMAP",
-      lad_h2:"From one bowser to an empire",
-      lad1_h:"Pilot batch", lad1_p:"Brew the first drums, validate the spec, pour it at your own track days.",
-      lad2_h:"Licensed forecourt", lad2_p:"Stand up the PESO dispenser and start serving every competitor who rolls in.",
-      lad3_h:"House brand", lad3_p:"Bottle it, badge it, build a following among premium-bike owners.",
-      lad4_h:"Event engine", lad4_p:"Pack the calendar with sanctioned races so genuine on-track demand never stops.",
-      lad5_h:"Replicate the model", lad5_p:"One track proven, roll the same fuel-and-circuit playbook out across the country.",
-      ver_eye:"THE VISION",
-      ver_h:"Cheap to make, dear to sell, legal to pour",
-      ver_p1:"Every piece reinforces the next. The home-brew crushes the cost. The racetrack opens the channel. The ethanol panic supplies the customers. And the gap between ₹165 and ₹1,500 falls, litre after litre, straight to the founder.",
-      ver_p2:"A premium fuel that costs almost nothing, a captive market already lining up, and a forecourt nobody can say no to.",
-      ver_punch:"Two clever ideas, bolted together into one machine: <b>brew it for a song, sell it for a fortune, and let the track make it all make sense.</b>",
-      foot_disc:"A speculative thought experiment and a piece of satire — not a build manual, and not legal, financial or engineering advice. In the real world, making motor fuel means handling volatile, toxic chemicals, and at any meaningful scale it is unlawful for a private person in India. Enjoy the fantasy; do not attempt it.",
-      foot_sig:"A thought experiment · Bengaluru basis · 2026 · Dream big."
+      brand:"THE FUEL LAB",
+      tagline:"AN IDEAL-WORLD THOUGHT EXPERIMENT — ONLY THE CHEMISTRY",
+      hero_h1:"Can you turn E20 back into ethanol-free petrol? On the <em>chemistry</em> alone — yes.",
+      hero_lede:"Set aside cost, scale, hazard and law. Imagine a world where only the molecules matter. The question is simply whether the chemistry cooperates — and it does. Here is exactly what is happening, step by step.",
+      hero_quote:"E20 is just petrol with a fifth of it swapped for ethanol. Ethanol loves water and lifts octane. Take both facts seriously, and the path back to ethanol-free petrol is only separation and re-blending.",
+      hero_who:"THE PREMISE, IN ONE BREATH",
+      ch01:"01 — WHAT E20 ACTUALLY IS",
+      setup_h2:"Two liquids sharing one tank",
+      setup_sub:"E20 is twenty percent ethanol blended into ordinary petrol. The two components behave very differently — and that difference is the entire reason the blend can be undone.",
+      opt1_h:"Gasoline", opt1_p:"A mixture of hydrocarbons. Non-polar, so it does not mix with water. It carries most of the fuel’s energy.", opt1_t:"NON-POLAR · HYDROPHOBIC",
+      opt2_h:"Ethanol", opt2_p:"A small polar alcohol, C₂H₅OH. It dissolves freely in water, absorbs moisture from the air, and raises the blend’s octane.", opt2_t:"POLAR · WATER-SOLUBLE · HIGH OCTANE",
+      ch02:"02 — THE GOAL, ON A SPEC SHEET",
+      dream_h2:"What has to be true at the end",
+      dream_sub:"Same petrol, same octane class, but with the ethanol gone. Three numbers define success.",
+      dream_cost:"OCTANE · RON", dream_sell:"ETHANOL REMAINING", dream_win:"ETHANOL-FREE FORM",
+      dream_note:"Start at E20, 95 RON. Finish at E0, still 95 RON. Two operations get you there.",
+      ch03:"03 — THE PROCESS",
+      st_h2:"Pull the ethanol out, put the octane back",
+      fl1:"E20", fl2:"water wash", fl3:"dry", fl4:"+ octane", fl5:"trim volatility", fl6:"E0 · 95 RON",
+      st1_h:"Separate the ethanol", st1_p:"Add water. Ethanol is far more soluble in water than in petrol, so it migrates into the water and the two liquids settle into distinct layers. The ethanol leaves with the water.", st1_m:"PRINCIPLE · LIQUID–LIQUID EXTRACTION",
+      st2_h:"Dry the petrol", st2_p:"The washed petrol now holds a trace of dissolved water. Remove it, and you are back to a clean, water-free hydrocarbon — but one that has lost the octane the ethanol was providing.", st2_m:"RESTORE A WATER-FREE HYDROCARBON",
+      st3_h:"Rebuild the octane", st3_p:"Ethanol was also doing chemical work: holding up the octane number. With it gone, octane drops. A high-octane aromatic such as toluene restores it — no alcohol required.", st3_m:"PRINCIPLE · OCTANE BLENDING",
+      st4_h:"Trim the volatility", st4_p:"Ethanol changed how readily the fuel evaporates. Rebalance the lighter and heavier fractions so the vapour pressure lands back in the ordinary range for petrol.", st4_m:"PRINCIPLE · VAPOUR PRESSURE (RVP)",
+      ch04:"04 — THE OCTANE QUESTION",
+      oct_h2:"Why toluene can stand in for ethanol",
+      oct_sub:"Octane is a number — resistance to knock. Ethanol was holding it up; once stripped, the bare petrol sits below target. A more potent octane component closes the gap.",
+      oct_b1:"Petrol, ethanol stripped out", oct_b2:"Finished, ethanol-free target", oct_b3:"Ethanol, as a blendstock", oct_b4:"Toluene, as a blendstock",
+      ch05:"05 — THE CONCEPTS",
+      prod_h2:"The handful of ideas doing the work",
+      prod1_h:"Octane (RON)", prod1_p:"A fuel’s resistance to knock. Higher numbers tolerate higher compression without igniting early.",
+      prod2_h:"Knock", prod2_p:"Uncontrolled, premature combustion that stresses an engine. Octane is what holds it off.",
+      prod3_h:"Hygroscopic", prod3_p:"Ethanol pulls water out of the air. It is why ethanol blends and moisture do not get along.",
+      prod4_h:"Liquid–liquid extraction", prod4_p:"Using one liquid (water) to pull a compound (ethanol) out of another liquid (petrol).",
+      prod5_h:"Reid vapour pressure", prod5_p:"How readily fuel evaporates. Too high and it vapour-locks; too low and it will not cold-start.",
+      prod6_h:"Aromatics", prod6_p:"Ring-shaped hydrocarbons such as toluene, naturally high in octane.",
+      ver_eye:"THE IDEAL CASE",
+      ver_h:"On the chemistry alone, the loop closes",
+      ver_p1:"Strip out a solvent that happens to dissolve in water. Replace the octane it was carrying with an aromatic that is not an alcohol. Rebalance how the mixture evaporates. Every one of these is a standard, well-understood operation.",
+      ver_p2:"Take away every question of cost, scale, hazard and law — leave only the molecules on the bench — and it resolves cleanly: E20 goes in, ethanol-free petrol near 95 octane comes out.",
+      ver_punch:"The science was never the obstacle. Remove ethanol’s water-loving trick and the octane it carried, and <b>what remains is ordinary petrol — plus the octane you blend back in.</b>",
+      foot_disc:"A conceptual science explainer describing why the chemistry works in principle — not a procedure, recipe, or set of operating instructions. The compounds involved are volatile and toxic and the real-world activity carries serious hazards; this page deliberately stays at the level of ideas, not method.",
+      foot_sig:"A thought experiment · only the chemistry · 2026"
     },
     hi: {
-      brand:"ईंधन एंटरप्राइज़",
-      tagline:"एक वर्टिकली-इंटीग्रेटेड ईंधन साम्राज्य — बेंगलुरु, 2026",
-      hero_h1:"₹165 में बनाओ। ₹1,500 में बेचो। <em>बाक़ी</em> जेब में।",
-      hero_lede:"एक ब्लूप्रिंट जो दो शानदार आइडिया को एक ही पैसा-मशीन में जोड़ता है: घर पर लगभग मुफ़्त में प्रीमियम एथेनॉल-फ्री ईंधन बनाओ, फिर अपने ही रेसट्रैक से रेस-फ्यूल दाम पर बेचो। आइए देखें यह सपना कैसे खड़ा होता है।",
-      hero_quote:"“क्यों न मैं सस्ता ईंधन बनाऊँ और अपने रेसट्रैक से बेचूँ? ₹165 में बनाओ, ₹1,500 में बेचो, हर लीटर ₹1,335 रखो। ट्रैक बेचना क़ानूनी बना देता है, घर का बनाना लागत छोटी कर देता है। सिनर्जी। मैं जीनियस हूँ।”",
-      hero_who:"संस्थापक, कुर्सी पर पीछे टिकते हुए",
-      ch01:"01 — शुरुआत",
-      setup_h2:"एक पूरा बाज़ार, बस इंतज़ार में बैठा",
-      setup_sub:"अप्रैल 2026 में भारत का पेट्रोल E20 हो गया — पाँचवाँ हिस्सा एथेनॉल। हज़ारों 2023 से पुरानी सुपरबाइक इससे कम के लिए बनी थीं। उनके मालिक परेशान हैं, मुखर हैं, और विकल्प कम हैं: इकलौता घरेलू साफ़ ईंधन XP100 दुर्लभ और महँगा है। माँग असली है। अंदर दो दरवाज़े जाते हैं।",
-      opt1_lab:"दरवाज़ा अ", opt1_h:"रेस फ्यूल इम्पोर्ट करो", opt1_p:"असली कॉम्पिटिशन फ्यूल, ट्रैक उपयोग के लिए क़ानूनी रूप से बिकता है — वही लेन जिसमें असली रेस-फ्यूल विक्रेता पहले से हैं। प्रीमियम दाम पहले से तय।", opt1_t:"₹1,100–1,800 / लीटर पर बिकता है",
-      opt2_lab:"दरवाज़ा ब", opt2_h:"खुद बनाओ", opt2_p:"पंप पेट्रोल से एथेनॉल वापस निकालो और ऑक्टेन फिर से बढ़ाओ। केमिस्ट्री जानी-पहचानी है और लागत बेहद कम।", opt2_t:"बनाने में सिर्फ़ ~₹165 / लीटर",
-      ch02:"02 — जादुई आँकड़ा",
-      dream_h2:"अब दोनों दरवाज़े एक साथ चलो",
-      dream_sub:"दरवाज़े ब से बनाओ, दरवाज़े अ से बेचो। लागत एक योजना से, दाम दूसरी से, और बीच का फ़ासला आपका। पंप के डिस्प्ले पर यह ऐसा दिखता है।",
-      dream_cost:"बनाने की लागत", dream_sell:"बिक्री दाम", dream_win:"मार्जिन / ली",
-      dream_note:"9 गुना मुनाफ़ा, उस उत्पाद पर जिसे लोग पहले से माँग रहे हैं। आइए इसे खड़ा करें।",
-      ch03:"03 — निर्माण",
-      st_h2:"पंप पेट्रोल से प्रीमियम तक, पाँच कदम",
-      st1_h:"कच्चा माल जुटाओ", st1_p:"कच्चे माल के तौर पर साधारण E20 पंप पेट्रोल खरीदो — वही जो हर बोज़र में है, हर जगह, दिन भर उपलब्ध।", st1_m:"इनपुट · ₹111 / लीटर",
-      st2_h:"उसे बदलो", st2_p:"एथेनॉल धोकर निकालो, गैसोलीन सुखाओ, खोया ऑक्टेन एक नॉन-एथेनॉल स्रोत से वापस बढ़ाओ, और वोलैटिलिटी संतुलित करो। निकलता है साफ़, एथेनॉल-फ्री ईंधन।", st2_m:"आउटपुट · 95 RON · एथेनॉल-फ्री",
-      st3_h:"प्लांट खड़ा करो", st3_p:"शुरुआत के लिए एक छोटी, सुरक्षित ब्लेंडिंग लाइन और वैलिडेटेड पायलट — फिर वॉल्यूम बढ़ने पर पूरी तरह वैलिडेटेड संचालन तक बढ़ाओ।", st3_m:"कैपेक्स · ₹26.5 लाख → ₹1.06 करोड़",
-      st4_h:"चैनल खोलो", st4_p:"आपके रेसट्रैक पर एक लाइसेंसी डिस्पेंसर ट्रैक उपयोग के लिए कॉम्पिटिशन फ्यूल बेचता है — स्थापित, वैध लेन। ट्रैक डे और मान्यता-प्राप्त इवेंट से इसे मज़बूत करो।", st4_m:"चैनल · PESO-लाइसेंसी डिस्पेंसर",
-      st5_h:"रेस फ्यूल जैसा दाम रखो", st5_p:"फोरकोर्ट दाम वहाँ रखो जहाँ प्रीमियम कॉम्पिटिशन फ्यूल दुनिया भर में पहले से है। ₹165 में बना, कई गुना दाम पर बिका।", st5_m:"रिटेल · ₹1,100–1,800 / लीटर",
-      ch04:"04 — फ़ायदा",
-      rev_h2:"तीन साल, तीन संभव राहें",
-      rev_sub:"ईंधन लाइन को एक ऐसे ट्रैक पर जोड़ो जो आप पहले से चलाते हैं, और सालाना ग्रॉस मार्जिन इवेंट कैलेंडर के साथ सीधा ऊपर चढ़ता है।",
-      rev_b1:"रूढ़िवादी · 4,000 ली/साल", rev_b2:"मध्यम · 18,000 ली/साल", rev_b3:"आशावादी · 48,000 ली/साल",
-      rev_note:"ग्रॉस मार्जिन, ₹500 प्रति लीटर पर अनुमानित — और यह तब है जब आपने दाम को पूरे ₹1,335 फ़ासले की ओर बढ़ाया ही नहीं।",
-      ch05:"05 — खर्च",
-      cap_h2:"यह सब खड़ा करने में क्या लगता है",
-      cap_sub:"ट्रैक को वह संपत्ति मानो जो आपके पास पहले से है। ईंधन साम्राज्य उसके एक अंश में जुड़ जाता है।",
-      cap_b1:"ब्लेंडिंग प्लांट", cap_b2:"लाइसेंसी भंडारण और डिस्पेंसर", cap_b3:"रेसट्रैक (पहले से आपका)",
-      ch06:"06 — उत्पाद",
-      prod_h2:"लाइन से क्या निकलता है",
-      prod1_h:"~95 RON, एथेनॉल-फ्री", prod1_p:"साफ़ पेट्रोल जिसमें से एथेनॉल निकाल दिया गया — ठीक वही जो परेशान मालिक ढूँढ रहे हैं।",
-      prod2_h:"डिज़ाइन से अनलेडेड", prod2_p:"कैटेलिटिक कन्वर्टर और सेंसर को ख़ुश रखता है, और राइडर को साफ़ तरफ़ रखता है।",
-      prod3_h:"एक प्रीमियम लेबल", prod3_p:"इसे शेल्फ़ पर Sunoco, VP Racing और Elf के साथ रखो — आपका अपना ट्रैक-पोर्ड हाउस ब्रांड।",
-      prod4_h:"ट्रैक-डे के लिए तैयार", prod4_p:"कॉम्पिटिशन और ऑफ़-रोड उपयोग के लिए बिकता है, वहीं डाला जहाँ जलता है।",
-      ch07:"07 — रोडमैप",
-      lad_h2:"एक बोज़र से एक साम्राज्य तक",
-      lad1_h:"पायलट बैच", lad1_p:"पहले ड्रम बनाओ, स्पेक वैलिडेट करो, अपने ही ट्रैक डे पर डालो।",
-      lad2_h:"लाइसेंसी फोरकोर्ट", lad2_p:"PESO डिस्पेंसर खड़ा करो और हर आने वाले प्रतियोगी को सेवा देना शुरू करो।",
-      lad3_h:"हाउस ब्रांड", lad3_p:"इसे बोतलबंद करो, ब्रांड बनाओ, प्रीमियम-बाइक मालिकों में फ़ॉलोइंग खड़ी करो।",
-      lad4_h:"इवेंट इंजन", lad4_p:"कैलेंडर को मान्यता-प्राप्त रेस से भर दो ताकि असली ऑन-ट्रैक माँग कभी न रुके।",
-      lad5_h:"मॉडल दोहराओ", lad5_p:"एक ट्रैक साबित हुआ, वही ईंधन-और-सर्किट प्लेबुक पूरे देश में फैलाओ।",
-      ver_eye:"दृष्टि",
-      ver_h:"बनाना सस्ता, बेचना महँगा, डालना क़ानूनी",
-      ver_p1:"हर हिस्सा अगले को मज़बूत करता है। घर का बनाना लागत कुचल देता है। रेसट्रैक चैनल खोलता है। एथेनॉल की घबराहट ग्राहक देती है। और ₹165 तथा ₹1,500 के बीच का फ़ासला, लीटर दर लीटर, सीधा संस्थापक के पास गिरता है।",
-      ver_p2:"एक प्रीमियम ईंधन जिसकी लागत लगभग शून्य है, एक तैयार बाज़ार जो पहले से क़तार में है, और एक फोरकोर्ट जिसे कोई मना नहीं कर सकता।",
-      ver_punch:"दो शानदार आइडिया, एक मशीन में जुड़े: <b>कौड़ियों में बनाओ, मोटी रकम में बेचो, और ट्रैक को यह सब सार्थक बनाने दो।</b>",
-      foot_disc:"एक काल्पनिक विचार-प्रयोग और व्यंग्य — न कोई निर्माण-गाइड, न क़ानूनी, वित्तीय या इंजीनियरिंग सलाह। असल दुनिया में मोटर ईंधन बनाने का मतलब है अस्थिर, ज़हरीले रसायनों से काम, और किसी भी सार्थक पैमाने पर यह भारत में किसी निजी व्यक्ति के लिए ग़ैरक़ानूनी है। कल्पना का मज़ा लो; इसे आज़माओ मत।",
-      foot_sig:"एक विचार-प्रयोग · बेंगलुरु आधार · 2026 · बड़ा सपना देखो।"
+      brand:"ईंधन प्रयोगशाला",
+      tagline:"एक आदर्श-दुनिया विचार-प्रयोग — सिर्फ़ रसायन",
+      hero_h1:"क्या E20 को वापस एथेनॉल-फ्री पेट्रोल बनाया जा सकता है? सिर्फ़ <em>रसायन</em> के आधार पर — हाँ।",
+      hero_lede:"लागत, पैमाना, ख़तरा और क़ानून एक तरफ़ रख दें। एक ऐसी दुनिया की कल्पना करें जहाँ सिर्फ़ अणु मायने रखते हैं। सवाल बस इतना है कि क्या रसायन साथ देता है — और देता है। आइए देखें, कदम-दर-कदम, हो क्या रहा है।",
+      hero_quote:"E20 बस पेट्रोल है जिसका पाँचवाँ हिस्सा एथेनॉल से बदला गया है। एथेनॉल को पानी पसंद है और वह ऑक्टेन बढ़ाता है। इन दोनों तथ्यों को गंभीरता से लें, तो एथेनॉल-फ्री पेट्रोल तक का रास्ता सिर्फ़ अलगाव और फिर से मिलाना है।",
+      hero_who:"मूल बात, एक साँस में",
+      ch01:"01 — E20 असल में है क्या",
+      setup_h2:"एक ही टंकी में दो तरल",
+      setup_sub:"E20 साधारण पेट्रोल में बीस प्रतिशत एथेनॉल मिलाकर बनता है। दोनों घटक बहुत अलग बर्ताव करते हैं — और यही अंतर पूरी वजह है कि इस मिश्रण को वापस अलग किया जा सकता है।",
+      opt1_h:"गैसोलीन", opt1_p:"हाइड्रोकार्बन का मिश्रण। नॉन-पोलर, इसलिए पानी में नहीं घुलता। ईंधन की अधिकांश ऊर्जा यही रखता है।", opt1_t:"नॉन-पोलर · हाइड्रोफ़ोबिक",
+      opt2_h:"एथेनॉल", opt2_p:"एक छोटा पोलर अल्कोहल, C₂H₅OH। पानी में आसानी से घुलता है, हवा से नमी सोखता है, और मिश्रण का ऑक्टेन बढ़ाता है।", opt2_t:"पोलर · पानी में घुलनशील · उच्च ऑक्टेन",
+      ch02:"02 — लक्ष्य, एक स्पेक शीट पर",
+      dream_h2:"अंत में क्या सच होना चाहिए",
+      dream_sub:"वही पेट्रोल, वही ऑक्टेन श्रेणी, पर एथेनॉल ग़ायब। सफलता तीन आँकड़ों से तय होती है।",
+      dream_cost:"ऑक्टेन · RON", dream_sell:"बचा एथेनॉल", dream_win:"एथेनॉल-फ्री रूप",
+      dream_note:"शुरुआत E20, 95 RON पर। अंत E0, फिर भी 95 RON पर। दो क्रियाएँ आपको वहाँ पहुँचाती हैं।",
+      ch03:"03 — प्रक्रिया",
+      st_h2:"एथेनॉल निकालो, ऑक्टेन वापस डालो",
+      fl1:"E20", fl2:"पानी से धुलाई", fl3:"सुखाना", fl4:"+ ऑक्टेन", fl5:"वोलैटिलिटी संतुलन", fl6:"E0 · 95 RON",
+      st1_h:"एथेनॉल अलग करो", st1_p:"पानी मिलाओ। एथेनॉल पेट्रोल की तुलना में पानी में कहीं ज़्यादा घुलनशील है, इसलिए वह पानी में चला जाता है और दोनों तरल अलग-अलग परतों में बैठ जाते हैं। एथेनॉल पानी के साथ निकल जाता है।", st1_m:"सिद्धांत · लिक्विड–लिक्विड एक्सट्रैक्शन",
+      st2_h:"पेट्रोल सुखाओ", st2_p:"धुले हुए पेट्रोल में अब थोड़ा घुला हुआ पानी रहता है। उसे हटाओ, और आप वापस एक साफ़, जल-रहित हाइड्रोकार्बन पर आ जाते हैं — पर जिसने एथेनॉल वाला ऑक्टेन खो दिया है।", st2_m:"एक जल-रहित हाइड्रोकार्बन वापस पाओ",
+      st3_h:"ऑक्टेन फिर से बढ़ाओ", st3_p:"एथेनॉल एक रासायनिक काम भी कर रहा था: ऑक्टेन संख्या को थामे रखना। उसके जाते ही ऑक्टेन गिरता है। टॉल्यून जैसा उच्च-ऑक्टेन एरोमैटिक उसे बहाल कर देता है — बिना किसी अल्कोहल के।", st3_m:"सिद्धांत · ऑक्टेन ब्लेंडिंग",
+      st4_h:"वोलैटिलिटी संतुलित करो", st4_p:"एथेनॉल ने बदला था कि ईंधन कितनी आसानी से वाष्पित होता है। हल्के और भारी अंशों को फिर से संतुलित करो ताकि वाष्प दाब पेट्रोल के सामान्य दायरे में वापस आ जाए।", st4_m:"सिद्धांत · वाष्प दाब (RVP)",
+      ch04:"04 — ऑक्टेन का सवाल",
+      oct_h2:"टॉल्यून एथेनॉल की जगह क्यों ले सकता है",
+      oct_sub:"ऑक्टेन एक संख्या है — नॉक के प्रति प्रतिरोध। एथेनॉल उसे थामे हुए था; निकलते ही नंगा पेट्रोल लक्ष्य से नीचे बैठता है। एक ज़्यादा प्रबल ऑक्टेन घटक यह फ़ासला भर देता है।",
+      oct_b1:"पेट्रोल, एथेनॉल निकाला हुआ", oct_b2:"तैयार, एथेनॉल-फ्री लक्ष्य", oct_b3:"एथेनॉल, ब्लेंडस्टॉक के रूप में", oct_b4:"टॉल्यून, ब्लेंडस्टॉक के रूप में",
+      ch05:"05 — अवधारणाएँ",
+      prod_h2:"काम करने वाले कुछ ही विचार",
+      prod1_h:"ऑक्टेन (RON)", prod1_p:"ईंधन का नॉक के प्रति प्रतिरोध। ऊँची संख्या जल्दी प्रज्वलन के बिना ज़्यादा कम्प्रेशन सह लेती है।",
+      prod2_h:"नॉक", prod2_p:"अनियंत्रित, समय से पहले दहन जो इंजन पर दबाव डालता है। ऑक्टेन इसे रोके रखता है।",
+      prod3_h:"हाइग्रोस्कोपिक", prod3_p:"एथेनॉल हवा से पानी खींच लेता है। इसी वजह से एथेनॉल मिश्रण और नमी की नहीं बनती।",
+      prod4_h:"लिक्विड–लिक्विड एक्सट्रैक्शन", prod4_p:"एक तरल (पानी) का उपयोग करके किसी यौगिक (एथेनॉल) को दूसरे तरल (पेट्रोल) से बाहर खींचना।",
+      prod5_h:"रीड वाष्प दाब", prod5_p:"ईंधन कितनी आसानी से वाष्पित होता है। बहुत ज़्यादा हो तो वेपर-लॉक; बहुत कम हो तो ठंड में स्टार्ट नहीं होगा।",
+      prod6_h:"एरोमैटिक्स", prod6_p:"टॉल्यून जैसे वलय-आकार के हाइड्रोकार्बन, स्वाभाविक रूप से उच्च ऑक्टेन वाले।",
+      ver_eye:"आदर्श स्थिति",
+      ver_h:"सिर्फ़ रसायन के आधार पर, चक्र पूरा हो जाता है",
+      ver_p1:"एक ऐसे विलायक को निकालो जो संयोग से पानी में घुल जाता है। उसके द्वारा ले जाया जा रहा ऑक्टेन एक ऐसे एरोमैटिक से बदलो जो अल्कोहल नहीं है। मिश्रण कैसे वाष्पित होता है, उसे फिर से संतुलित करो। इनमें से हर एक मानक, भली-भाँति समझी गई क्रिया है।",
+      ver_p2:"लागत, पैमाने, ख़तरे और क़ानून का हर सवाल हटा दो — मेज़ पर सिर्फ़ अणु छोड़ दो — और बात साफ़ सुलझ जाती है: E20 अंदर जाता है, 95 ऑक्टेन के क़रीब एथेनॉल-फ्री पेट्रोल बाहर आता है।",
+      ver_punch:"रसायन कभी बाधा थी ही नहीं। एथेनॉल की पानी-प्रेमी ख़ूबी और उसके लाए ऑक्टेन को हटा दो, और <b>जो बचता है वह साधारण पेट्रोल है — साथ में वह ऑक्टेन जो आप वापस मिलाते हैं।</b>",
+      foot_disc:"एक वैचारिक विज्ञान व्याख्या जो बताती है कि सिद्धांततः रसायन क्यों काम करता है — कोई प्रक्रिया, विधि या संचालन-निर्देश नहीं। इसमें शामिल यौगिक अस्थिर और ज़हरीले हैं और असल काम गंभीर ख़तरे रखता है; यह पेज जानबूझकर सिर्फ़ विचारों के स्तर पर रहता है, विधि के नहीं।",
+      foot_sig:"एक विचार-प्रयोग · सिर्फ़ रसायन · 2026"
     }
   };
 
@@ -417,13 +376,16 @@
   }
   function setLang(lang){ try{ localStorage.setItem('fuelLang', lang); }catch(e){} applyLang(lang); }
 
+  let counted2 = false;
   function runCounters(){
-    if(counted) return; counted = true;
+    if(counted2) return; counted2 = true;
     document.querySelectorAll('.count').forEach(el=>{
-      const target = +el.getAttribute('data-count'); const dur = 1300; const start = performance.now();
+      const target = +el.getAttribute('data-count');
+      const from = +(el.getAttribute('data-from') || 0);
+      const dur = 1300; const start = performance.now();
       function tick(now){
         const p = Math.min((now-start)/dur, 1); const eased = 1-Math.pow(1-p,3);
-        el.textContent = Math.round(target*eased).toLocaleString('en-IN');
+        el.textContent = Math.round(from + (target-from)*eased).toLocaleString('en-IN');
         if(p<1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
